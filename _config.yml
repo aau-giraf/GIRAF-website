@@ -1,0 +1,79 @@
+# Site settings
+title: Giraf
+description: A collaborative wiki for Giraf project documentation
+author: nbhansen
+email: nbha@cs.aau.dk
+
+# Theme
+# theme: millennial
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /:year/:month/:day/:title/
+paginate_path: /blog/page:num/
+
+# GitHub Pages settings
+url: "https://giraf.cs.aau.dk"
+baseurl: "/girafwiki"
+
+# Jekyll plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-archives
+
+# Millennial theme settings
+menu:
+  - title: "About"
+    url: "/about"
+  - title: "Wiki"
+    url: "/wiki"
+  - title: "Blog"
+    url: "/blog"
+  - title: "Contact"
+    url: "/contact"
+
+# Social links
+github_username: nbhansen
+email: nbha@cs.aau.dk
+
+# Google Analytics
+google_analytics:
+
+# Collections (for organizing wiki content)
+collections:
+  wiki:
+    output: true
+    permalink: /:collection/:name/
+
+# Default layouts
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "wiki"
+    values:
+      layout: "wiki"
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md

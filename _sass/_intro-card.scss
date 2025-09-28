@@ -1,0 +1,29 @@
+.intro-card {
+  display: flex;
+  align-items: center;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.intro-card-logo {
+  flex: 0 0 100px; /* Do not grow, do not shrink, initial size 100px */
+  margin-right: 20px;
+}
+
+.intro-card-logo img {
+  max-width: 100%;
+  height: auto;
+}
+
+.intro-card-text {
+  flex: 1;
+}
+
+.intro-card-text h1,
+.intro-card-text h2,
+.intro-card-text h3 {
+  margin-top: 0;
+}

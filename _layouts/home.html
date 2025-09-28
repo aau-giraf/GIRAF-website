@@ -1,0 +1,25 @@
+---
+layout: default
+title: Home
+---
+
+<div class="home-container">
+  <div class="main-content">
+    <div class="intro-card">
+      <div class="intro-card-logo">
+        <img src="{{ '/assets/img/giraf-logo.png' | relative_url }}" alt="Giraf Project Logo">
+      </div>
+      <div class="intro-card-text">
+        {{ content }}
+      </div>
+    </div>
+    {% assign featured_posts = site.posts | where: "featured", true %}
+    {% for post in featured_posts %}
+      {% include featured-post.html %}
+    {% endfor %}
+  </div>
+
+  <div class="sidebar">
+    {% include news-feed.html %}
+  </div>
+</div>

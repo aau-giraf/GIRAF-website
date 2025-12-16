@@ -5,7 +5,8 @@ date: 2025-09-27 00:00:00
 # The image should be placed in the /assets/img/ directory
 image: 'arctic-1.jpg'
 # Set to true to feature this post on the homepage
-featured: true
+featured: false
+published: false
 ---
 
 This is the beginning of your blog post. Write your content here.

@@ -1,6 +1,6 @@
 # Site settings
-title: Giraf
-description: A collaborative wiki for Giraf project documentation
+title: GIRAF
+description: Digital tools for autistic children - developed at Aalborg University since 2011
 author: nbhansen
 email: nbha@cs.aau.dk
 
@@ -15,7 +15,7 @@ paginate_path: /blog/page:num/
 
 # GitHub Pages settings
 url: "https://giraf.cs.aau.dk"
-baseurl: "/girafwiki"
+baseurl: ""
 
 # Jekyll plugins
 plugins:
@@ -27,27 +27,23 @@ plugins:
 
 # Millennial theme settings
 menu:
-  - title: "About"
-    url: "/about"
-  - title: "Wiki"
-    url: "/wiki"
-  - title: "Blog"
-    url: "/blog"
+  - title: "About GIRAF"
+    url: "/about/"
+  - title: "Our Apps"
+    url: "/apps/"
+  - title: "History"
+    url: "/history/"
+  - title: "For Students"
+    url: "/students/"
   - title: "Contact"
-    url: "/contact"
+    url: "/contact/"
 
 # Social links
-github_username: nbhansen
+github_username: aau-giraf
 email: nbha@cs.aau.dk
 
 # Google Analytics
 google_analytics:
-
-# Collections (for organizing wiki content)
-collections:
-  wiki:
-    output: true
-    permalink: /:collection/:name/
 
 # Default layouts
 defaults:
@@ -61,11 +57,6 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-  - scope:
-      path: ""
-      type: "wiki"
-    values:
-      layout: "wiki"
 
 # Exclude from processing
 exclude:

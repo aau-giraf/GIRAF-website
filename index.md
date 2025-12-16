@@ -3,6 +3,22 @@ layout: home
 title: Welcome to GIRAF
 ---
 
-**GIRAF (Graphical Interface Resource for Autistic Folks)** is an open-source project developed by researchers and students at Department of Computer Science at Aalborg University. The project consists of a set of tablet-based applications designed to help autistic children and young adults, particularly those with little or no verbal communication skills.
+## What We Build
 
-GIRAF tackles common challenges faced by its users, such as the need for rigid daily schedules, communication barriers, and selective eating habits. By digitizing physical tools like schedule boards and communication cards, the applications provide structure, predictability, and consistency to daily routines, which can help boost quality of life.
+Our applications digitize the physical tools that already work - schedule boards, picture cards, and visual aids - making them more consistent, portable, and easier to update.
+
+**Current Projects:**
+- **Foodplanner** - Structured meal planning for selective eaters
+- **Visual Tangible Artefacts** - Connecting physical objects to digital schedules
+
+[See Our Apps](/apps/)
+
+## For Students
+
+GIRAF is a semester project for software engineering students at AAU. Each semester, student teams contribute new features, improvements, and research.
+
+Ready to contribute? Start with our [technical wiki](https://aau-giraf.github.io/wiki/Getting_Started/).
+
+## Our Partners
+
+We develop in close cooperation with [Egebakken Specialskole](https://egebakken.aula.dk/), a leading Danish school for children with autism. Their educators provide invaluable feedback that shapes our applications.

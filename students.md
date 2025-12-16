@@ -1,0 +1,55 @@
+---
+layout: page
+title: For Students
+permalink: /students/
+---
+
+## Join the GIRAF Project
+
+GIRAF is a semester project for students at Aalborg University. Each semester, student teams contribute new features, improvements, and research to our applications.
+
+## Getting Started
+
+Ready to contribute? Head to our developer wiki:
+
+**[GIRAF Wiki - Getting Started](https://aau-giraf.github.io/wiki/Getting_Started/)**
+
+The wiki contains:
+- Development environment setup guides
+- Project architecture documentation
+- Contribution guidelines
+- Git workflow and branching strategy
+- Technical documentation for each application
+
+## What You'll Work On
+
+Depending on your semester and study program, you might:
+
+- **Develop new features** for Foodplanner or VTA
+- **Improve user experience** based on feedback from partner institutions
+- **Research user needs** through collaboration with Egebakken Specialskole
+- **Write documentation** and improve onboarding for future students
+- **Fix bugs** and improve code quality
+
+## Programs Involved
+
+GIRAF involves students from multiple programs:
+- Software Engineering (5th semester)
+- Information Technology
+- Interaction Design
+
+This interdisciplinary collaboration mirrors real-world software development.
+
+## GitHub Organization
+
+All code lives at [github.com/aau-giraf](https://github.com/aau-giraf).
+
+Key repositories:
+- [foodplanner](https://github.com/aau-giraf/foodplanner) - Foodplanner mobile app
+- [foodplanner-api](https://github.com/aau-giraf/foodplanner-api) - Foodplanner backend
+- [visual-tangible-artefacts](https://github.com/aau-giraf/visual-tangible-artefacts) - VTA app and API
+- [wiki](https://github.com/aau-giraf/wiki) - Documentation
+
+## Questions?
+
+Check the [wiki](https://aau-giraf.github.io/wiki/) first, or contact the project supervisor.

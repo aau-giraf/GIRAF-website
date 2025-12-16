@@ -1,7 +1,8 @@
 <header class="site-header">
-  <h3 class="site-title">
-    <a href="{{ "/" | relative_url }}">{{ site.title }}</a>
-  </h3>
+  <a href="{{ "/" | relative_url }}" class="site-brand">
+    <img src="{{ '/assets/img/giraf-logo.png' | relative_url }}" alt="GIRAF Logo" class="site-logo">
+    <span class="site-title">{{ site.title }}</span>
+  </a>
   <nav class="menu-list">
     {% for item in site.data.settings.menu %}
       <a href="{{ item.url | relative_url }}" class="menu-link">{{ item.name }}</a>

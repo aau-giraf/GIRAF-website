@@ -3,20 +3,38 @@ layout: default
 title: Home
 ---
 
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-logo">
+      <img src="{{ '/assets/img/giraf-logo.png' | relative_url }}" alt="GIRAF Logo">
+    </div>
+    <div class="hero-text">
+      <h1>Digital tools for autistic children</h1>
+      <p class="hero-subtitle">Open-source tablet applications developed at Aalborg University since 2011</p>
+    </div>
+  </div>
+</section>
+
 <div class="home-container">
   <div class="main-content">
-    <div class="intro-card">
-      <div class="intro-card-logo">
-        <img src="{{ '/assets/img/giraf-logo.png' | relative_url }}" alt="Giraf Project Logo">
-      </div>
-      <div class="intro-card-text">
-        {{ content }}
-      </div>
-    </div>
+    {{ content }}
+
     {% assign featured_posts = site.posts | where: "featured", true %}
-    {% for post in featured_posts %}
-      {% include featured-post.html %}
-    {% endfor %}
+    {% if featured_posts.size > 0 %}
+    <section class="featured-posts-section">
+      <h2>Featured</h2>
+      <div class="featured-posts-grid">
+        {% for post in featured_posts limit: 6 %}
+          <article class="featured-card">
+            <a href="{{ post.url | relative_url }}">
+              <h3>{{ post.title }}</h3>
+              <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+            </a>
+          </article>
+        {% endfor %}
+      </div>
+    </section>
+    {% endif %}
   </div>
 
   <div class="sidebar">

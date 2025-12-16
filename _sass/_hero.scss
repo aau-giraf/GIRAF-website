@@ -2,7 +2,9 @@
   background: linear-gradient(135deg, #f5a623 0%, #f7931e 50%, #e8820c 100%);
   padding: 40px 20px;
   margin-bottom: 40px;
-  width: 100%;
+  /* Break out of container to full viewport width */
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
   display: flex;
   justify-content: center;
 }

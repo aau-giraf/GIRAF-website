@@ -1,106 +1,156 @@
+/* Modern clean header */
 .site-header {
-  min-height: 56px;
-  width: $container-width;
-  position: fixed;
   background-color: white;
-  box-shadow: 0 5px 6px -6px #feb656;
+  padding: 0 20px;
+  position: sticky;
+  top: 0;
   z-index: 100;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
 }
-@media (max-width: $container-width) {
-  .site-header {
-    min-height: 56px;
-    width: 95vw;
-    position: fixed;
-    background-color: white;
-    box-shadow: 0 5px 6px -6px #feb656;
-    z-index: 100;
-  }
+
+.header-container {
+  max-width: $container-width;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: $header-thickness;
 }
-.site-header a {
-  text-decoration: none;
-}
+
+/* Logo and brand */
 .site-brand {
   display: flex;
   align-items: center;
-  float: left;
-  height: 56px;
-  padding-left: 10px;
+  text-decoration: none;
+  gap: 10px;
 }
+
 .site-logo {
   height: 40px;
   width: auto;
-  margin-right: 8px;
 }
+
 .site-title {
-  font-size: 26px;
-  font-weight: 400;
-  color: #feb656;
-}
-.menu-list {
-  line-height: $header-thickness;
-  float: right;
-}
-.menu-link {
-  padding: 5px 10px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: $primary-color;
+  font-family: $base-font-family;
 }
 
-.menu-list .fa {
-  color: #feb656;
+/* Navigation */
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
-/*
-  Responsiveness with a dropdown menu
-*/
+.nav-link {
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: $text-muted;
+  text-decoration: none;
+  transition: all 0.2s ease;
 
-@media (min-width: $container-width) {
-  .dropbtn {
-    display: none;
+  &:hover {
+    color: $text-dark;
+    background-color: rgba(0,0,0,0.04);
   }
-  .dropdown-content {
-    display: none;
+
+  &.active {
+    background-color: $primary-color;
+    color: white;
   }
 }
-@media (max-width: $container-width) {
-  .menu-list {
-    display: none;
+
+/* Header CTA button */
+.header-cta {
+  background: $primary-color;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  margin-left: 16px;
+
+  &:hover {
+    background: $primary-dark;
+    transform: translateY(-1px);
   }
-  .site-title {
-    padding-right: 0.25rem;
+}
+
+/* Social icons in header */
+.header-social {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: 16px;
+
+  a {
+    color: $text-muted;
+    padding: 8px;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+
+    &:hover {
+      color: $primary-color;
+      background-color: rgba(254, 182, 86, 0.1);
+    }
   }
-  .dropbtn {
-    background-color: white;
-    color: black;
-    padding: 16px;
-    margin-top: 4px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
+}
+
+/* Mobile menu button */
+.mobile-menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  color: $text-dark;
+  font-size: 1.5rem;
+}
+
+/* Mobile dropdown */
+.mobile-dropdown {
+  display: none;
+  position: absolute;
+  top: $header-thickness;
+  left: 0;
+  right: 0;
+  background: white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 16px;
+
+  &.open {
+    display: block;
   }
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  .dropdown-content a {
-    color: black;
+
+  .nav-link {
+    display: block;
     padding: 12px 16px;
-    text-decoration: none;
+    border-radius: 8px;
+    margin-bottom: 4px;
+  }
+
+  .header-cta {
     display: block;
+    text-align: center;
+    margin: 16px 0 0 0;
   }
-  .dropdown-content a:hover {
-    background-color: #f1f1f1
+}
+
+/* Responsive */
+@media (max-width: $tablet-width) {
+  .nav-menu,
+  .header-cta,
+  .header-social {
+    display: none;
   }
-  .dropdown:hover .dropdown-content {
+
+  .mobile-menu-btn {
     display: block;
-  }
-  .dropdown:hover .dropbtn {
-    background-color: #f1f1f1;
   }
 }

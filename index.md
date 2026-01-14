@@ -3,22 +3,14 @@ layout: home
 title: Welcome to GIRAF
 ---
 
-## What We Build
+## Latest News
 
-Our applications digitize the physical tools that already work - schedule boards, picture cards, and visual aids - making them more consistent, portable, and easier to update.
+{% for post in site.posts limit:5 %}
+<article class="post-card">
+  <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+  <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time>
+  <p>{{ post.excerpt | strip_html | truncate: 150 }}</p>
+</article>
+{% endfor %}
 
-**Current Projects:**
-- **Foodplanner** - Structured meal planning for selective eaters
-- **Visual Tangible Artefacts** - Connecting physical objects to digital schedules
-
-[See Our Apps](/apps/)
-
-## For Students
-
-GIRAF is a semester project for software engineering students at AAU. Each semester, student teams contribute new features, improvements, and research.
-
-Ready to contribute? Start with our [technical wiki](https://aau-giraf.github.io/wiki/Getting_Started/).
-
-## Our Partners
-
-We develop in close cooperation with [Egebakken Specialskole](https://egebakken.aula.dk/), a leading Danish school for children with autism. Their educators provide invaluable feedback that shapes our applications.
+[View all news →](/blog/)

@@ -1,29 +1,23 @@
+{% assign related_posts = site.posts | where_exp: "post", "post.url != page.url" %}
+{% if related_posts.size > 0 %}
 <div class="related">
   <h2>{{ site.data.settings.related_posts }}</h2>
-  {% assign listed_posts_urls = page.url | split: ' ' %}
   <ul class="related-posts">
-    {% for tag in page.tags %}
-      {% for mypost in site.tags[tag] limit:2 %}
-        {% if listed_posts_urls contains mypost.url %}
-        {% else %}
-          <li>
-            <h3>
-              <a href="{{ site.github.url }}{{ mypost.url }}">
-                <div class="related-thumbnail">
-                  {% if mypost.image %}
-                    <img src="{{ site.url }}{{ site.baseurl }}/assets/img/{{ mypost.image }}">
-                  {% endif %}
-                </div>
-                <div class="related-title">
-                  {{ mypost.title }}
-                </div>
-                <!--<small>{{ mypost.date | date: "%B %-d, %Y" }}</small>-->
-              </a>
-            </h3>
-          </li>
-          {% assign listed_posts_urls = listed_posts_urls | push: mypost.url %}
-        {% endif %}
-      {% endfor %}
+    {% for post in related_posts limit:3 %}
+      <li>
+        <a href="{{ post.url | relative_url }}" class="related-post-link">
+          {% if post.image %}
+            <div class="related-thumbnail">
+              <img src="{{ '/assets/img/' | append: post.image | relative_url }}" alt="{{ post.title }}">
+            </div>
+          {% endif %}
+          <div class="related-info">
+            <span class="related-title">{{ post.title }}</span>
+            <span class="related-date">{{ post.date | date: "%B %-d, %Y" }}</span>
+          </div>
+        </a>
+      </li>
     {% endfor %}
   </ul>
 </div>
+{% endif %}

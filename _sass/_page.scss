@@ -1,6 +1,124 @@
-.page-content {
+/* Page Header */
+.page-header {
+  background: linear-gradient(180deg, #fef9f3 0%, $bg-cream 100%);
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.page-header-content {
+  max-width: $container-width;
+  margin: 0 auto;
+
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 12px;
+  }
+}
+
+.page-description {
+  color: $text-muted;
+  font-size: 1.125rem;
   max-width: 600px;
-  display: block;
-  margin: 10px auto 10px;
-  padding: 0px 10px 10px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Page Content */
+.page-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 60px 20px;
+
+  h2 {
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px solid #eee;
+
+    &:first-child {
+      margin-top: 0;
+      padding-top: 0;
+      border-top: none;
+    }
+  }
+
+  h3 {
+    margin-top: 32px;
+  }
+
+  p {
+    line-height: 1.7;
+  }
+
+  ul, ol {
+    line-height: 1.7;
+  }
+
+  /* Nice link styling */
+  a {
+    color: $primary-color;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+
+    &:hover {
+      color: $primary-dark;
+    }
+  }
+
+  /* Better image handling */
+  img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin: 24px 0;
+  }
+
+  /* Code blocks */
+  pre, code {
+    background: white;
+    border: 1px solid $border-light;
+    border-radius: 6px;
+  }
+
+  code {
+    padding: 2px 6px;
+    font-size: 0.9em;
+  }
+
+  pre {
+    padding: 16px;
+    overflow-x: auto;
+
+    code {
+      padding: 0;
+      border: none;
+      background: none;
+    }
+  }
+
+  /* Horizontal rules */
+  hr {
+    border: none;
+    border-top: 1px solid #eee;
+    margin: 48px 0;
+  }
+}
+
+/* Responsive */
+@media (max-width: $tablet-width) {
+  .page-header {
+    padding: 40px 20px;
+  }
+
+  .page-header-content h1 {
+    font-size: 2rem;
+  }
+
+  .page-content {
+    padding: 40px 20px;
+  }
+}
+
+@media (max-width: $phone-width) {
+  .page-header-content h1 {
+    font-size: 1.75rem;
+  }
 }

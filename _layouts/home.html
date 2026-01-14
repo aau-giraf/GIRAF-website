@@ -4,40 +4,24 @@ title: Home
 ---
 
 <section class="hero">
-  <div class="hero-content">
-    <div class="hero-logo">
-      <img src="{{ '/assets/img/giraf-logo.png' | relative_url }}" alt="GIRAF Logo">
-    </div>
-    <div class="hero-text">
-      <h1>Digital tools for autistic children</h1>
-      <p class="hero-subtitle">Open-source tablet applications developed at Aalborg University since 2011</p>
+  <div class="hero-container">
+    <span class="hero-badge">Open Source Autism Apps</span>
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>Empowering children through <span class="highlight">playful technology</span></h1>
+        <p>GIRAF is a suite of free apps designed to assist children with autism spectrum disorder in their daily activities through visual schedules, pictograms, and interactive tools.</p>
+        <div class="hero-buttons">
+          <a href="{{ '/apps/' | relative_url }}" class="btn btn-primary">Download Free</a>
+          <a href="{{ '/about/' | relative_url }}" class="btn btn-secondary">Learn More →</a>
+        </div>
+      </div>
+      <div class="hero-illustration">
+        <img src="{{ '/assets/img/giraf-hero.svg' | relative_url }}" alt="Friendly giraffe mascot">
+      </div>
     </div>
   </div>
 </section>
 
-<div class="home-container">
-  <div class="main-content">
-    {{ content }}
-
-    {% assign featured_posts = site.posts | where: "featured", true %}
-    {% if featured_posts.size > 0 %}
-    <section class="featured-posts-section">
-      <h2>Featured</h2>
-      <div class="featured-posts-grid">
-        {% for post in featured_posts limit: 6 %}
-          <article class="featured-card">
-            <a href="{{ post.url | relative_url }}">
-              <h3>{{ post.title }}</h3>
-              <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-            </a>
-          </article>
-        {% endfor %}
-      </div>
-    </section>
-    {% endif %}
-  </div>
-
-  <div class="sidebar">
-    {% include news-feed.html %}
-  </div>
+<div class="home-content">
+  {{ content }}
 </div>

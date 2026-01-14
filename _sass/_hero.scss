@@ -1,118 +1,141 @@
+/* Hero Section */
 .hero {
-  background: linear-gradient(135deg, #f5a623 0%, #f7931e 50%, #e8820c 100%);
-  padding: 40px 20px;
-  margin-bottom: 40px;
-  /* Break out of container to full viewport width */
-  width: 100vw;
-  margin-left: calc(-50vw + 50%);
-  display: flex;
-  justify-content: center;
+  background: linear-gradient(180deg, #fef9f3 0%, $bg-cream 100%);
+  padding: 60px 20px 80px;
+}
+
+.hero-container {
+  max-width: $container-width;
+  margin: 0 auto;
+}
+
+.hero-badge {
+  display: inline-block;
+  background: rgba(254, 182, 86, 0.15);
+  color: $primary-dark;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-bottom: 24px;
 }
 
 .hero-content {
-  display: table;
-}
-
-.hero-logo {
-  display: table-cell;
-  vertical-align: middle;
-  width: 80px;
-  padding-right: 25px;
-}
-
-.hero-logo img {
-  width: 80px;
-  height: auto;
-  filter: brightness(0) invert(1);
-  opacity: 0.95;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
 }
 
 .hero-text {
-  display: table-cell;
-  vertical-align: middle;
-  text-align: left;
-}
-
-.hero h1 {
-  color: white;
-  font-size: 2rem;
-  font-weight: 700;
-  margin: 0 0 8px 0;
-}
-
-.hero-subtitle {
-  color: rgba(255, 255, 255, 0.95);
-  font-size: 1.05rem;
-  margin: 0;
-}
-
-/* Featured posts grid */
-.featured-posts-section {
-  margin-top: 40px;
-  padding-top: 30px;
-  border-top: 1px solid #eee;
-}
-
-.featured-posts-section h2 {
-  margin-bottom: 20px;
-  color: #333;
-}
-
-.featured-posts-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-}
-
-.featured-card {
-  background: linear-gradient(135deg, #f5a623 0%, #f7931e 100%);
-  border-radius: 8px;
-  overflow: hidden;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.featured-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 20px rgba(245, 166, 35, 0.3);
-}
-
-.featured-card a {
-  display: block;
-  padding: 25px;
-  text-decoration: none;
-}
-
-.featured-card h3 {
-  color: white;
-  font-size: 1.1rem;
-  margin: 0 0 10px 0;
-  font-weight: 600;
-}
-
-.featured-card .post-date {
-  color: rgba(255, 255, 255, 0.85);
-  font-size: 0.85rem;
-}
-
-/* Responsive adjustments */
-@media (max-width: 600px) {
-  .hero {
-    padding: 30px 15px;
+  h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
   }
 
-  .hero-logo {
-    width: 55px;
+  p {
+    font-size: 1.125rem;
+    color: $text-muted;
+    line-height: 1.7;
+    margin-bottom: 32px;
   }
+}
 
-  .hero h1 {
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.hero-illustration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
+}
+
+/* Floating decorative elements */
+.hero-decoration {
+  position: absolute;
+
+  &.star {
+    top: 10%;
+    left: 10%;
+    width: 50px;
+    height: 50px;
+    background: #5eead4;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0d9488;
     font-size: 1.5rem;
   }
 
-  .hero-subtitle {
-    font-size: 0.95rem;
+  &.heart {
+    bottom: 15%;
+    right: 5%;
+    width: 45px;
+    height: 45px;
+    background: #fecaca;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f87171;
+    font-size: 1.25rem;
+  }
+}
+
+/* Responsive */
+@media (max-width: $tablet-width) {
+  .hero {
+    padding: 40px 20px 60px;
   }
 
-  .featured-posts-grid {
+  .hero-content {
     grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .hero-text {
+    h1 {
+      font-size: 2.25rem;
+    }
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-illustration {
+    order: -1;
+
+    img {
+      max-width: 280px;
+    }
+  }
+}
+
+@media (max-width: $phone-width) {
+  .hero-text h1 {
+    font-size: 1.875rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+
+    .btn {
+      width: 100%;
+      text-align: center;
+    }
   }
 }

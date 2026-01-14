@@ -1,34 +1,40 @@
 /*
-  Site container
+  Site main content area
 */
 
-.container {
-  width: $container-width;
-  margin-left: auto;
-  margin-right: auto;
+.site-main {
+  min-height: calc(100vh - 200px);
 }
-.container a {
+
+.site-main a {
+  color: $primary-color;
   text-decoration: underline;
-}
-.content-wrapper {
-  padding-top: $header-thickness+10px;
-  margin: auto;
-  display: block;
-  width: $container-width - 20px;
-}
-.content-wrapper h1 {
-  margin: 20px 0px 5px;
-}
-@media (max-width: $container-width) {
-  .container {
-    width: 95vw;
-    margin-left: auto;
-    margin-right: auto;
+
+  &:hover {
+    color: $primary-dark;
   }
-  .content-wrapper {
-    padding-top: $header-thickness+10px;
-    margin: auto;
-    display: block;
-    width: 95vw;
+}
+
+/* Page content wrapper */
+.page-content {
+  max-width: $container-width;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+.page-content h1 {
+  margin-bottom: 24px;
+}
+
+/* Legacy container support */
+.container {
+  max-width: $container-width;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media (max-width: $container-width) {
+  .page-content {
+    padding: 40px 20px;
   }
 }

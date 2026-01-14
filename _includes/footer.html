@@ -1,6 +1,43 @@
-<footer class="footer">
-  {% for item in site.data.settings.social %}
-    <a href="{{ item.link }}" class="menu-link" target="_blank"><i class="fa fa-{{ item.icon }}" aria-hidden="true"></i></a>
-  {% endfor %}
-  <div class="footer-description"><a href="{{ site.github.url }}/">{{ site.title }} | {{ site.description }} by {{ site.author }}</a></div>
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-brand">
+      <a href="{{ '/' | relative_url }}" class="footer-logo-link">
+        <img src="{{ '/assets/img/giraf-logo.png' | relative_url }}" alt="GIRAF Logo" class="footer-logo">
+        <span class="footer-title">GIRAF</span>
+      </a>
+      <p>A suite of free apps designed to assist children with autism spectrum disorder in their daily activities. Developed with love at Aalborg University.</p>
+      <div class="footer-social">
+        {% for item in site.data.settings.social %}
+          <a href="{{ item.link }}" target="_blank" aria-label="{{ item.icon }}">
+            <i class="fa fa-{{ item.icon }}" aria-hidden="true"></i>
+          </a>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="footer-nav">
+      <h4>Navigation</h4>
+      <ul>
+        <li><a href="{{ '/' | relative_url }}">Home</a></li>
+        <li><a href="{{ '/about/' | relative_url }}">About</a></li>
+        <li><a href="{{ '/apps/' | relative_url }}">Apps</a></li>
+        <li><a href="{{ '/students/' | relative_url }}">For Students</a></li>
+        <li><a href="{{ '/contact/' | relative_url }}">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-resources">
+      <h4>Resources</h4>
+      <ul>
+        <li><a href="https://aau-giraf.github.io/wiki/" target="_blank">Documentation</a></li>
+        <li><a href="https://github.com/aau-giraf" target="_blank">GitHub</a></li>
+        <li><a href="{{ '/history/' | relative_url }}">History</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; {{ site.time | date: '%Y' }} GIRAF Project. Part of Aalborg University.</p>
+    <p>Made with ❤️ in Denmark</p>
+  </div>
 </footer>

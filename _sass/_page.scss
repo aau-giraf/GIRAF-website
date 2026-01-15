@@ -122,3 +122,120 @@
     font-size: 1.75rem;
   }
 }
+
+/*
+  About Page Components
+*/
+
+/* Hero Section */
+.hero-section {
+  margin: -20px -20px 40px;
+  text-align: center;
+
+  .hero-image {
+    max-width: 100%;
+    max-height: 300px;
+    width: auto;
+    margin: 0 auto;
+    border-radius: 0;
+  }
+}
+
+/* Feature Grid */
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.feature-card {
+  background: white;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+
+  h4 {
+    color: $primary-color;
+    margin: 0 0 0.75rem 0;
+    font-size: 1.1rem;
+  }
+
+  p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.6;
+  }
+}
+
+/* Partner Highlight */
+.partner-highlight {
+  background: linear-gradient(135deg, #fef9f3 0%, #fff 100%);
+  border-left: 4px solid $primary-color;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  border-radius: 0 12px 12px 0;
+
+  p {
+    margin: 0;
+    line-height: 1.7;
+  }
+}
+
+/* App Cards (for applications section) */
+.page-content {
+  h3 {
+    color: #333;
+
+    &:before {
+      content: none;
+    }
+  }
+}
+
+/* Tables styling */
+.page-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-size: 0.95rem;
+
+  th, td {
+    padding: 12px 16px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+  }
+
+  th {
+    background: #f9f6f2;
+    font-weight: 600;
+    color: #333;
+  }
+
+  tr:hover td {
+    background: #fef9f3;
+  }
+}
+
+/* Responsive */
+@media (max-width: $tablet-width) {
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-section {
+    margin: -20px -20px 30px;
+  }
+}
+
+@media (max-width: $phone-width) {
+  .feature-card {
+    padding: 1.25rem;
+  }
+
+  .partner-highlight {
+    padding: 1.25rem;
+  }
+}

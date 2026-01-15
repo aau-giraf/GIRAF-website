@@ -25,19 +25,6 @@ plugins:
   - jekyll-paginate
   - jekyll-archives
 
-# Millennial theme settings
-menu:
-  - title: "About GIRAF"
-    url: "/about/"
-  - title: "Our Apps"
-    url: "/apps/"
-  - title: "History"
-    url: "/history/"
-  - title: "For Students"
-    url: "/students/"
-  - title: "Contact"
-    url: "/contact/"
-
 # Social links
 github_username: aau-giraf
 email: nbha@cs.aau.dk

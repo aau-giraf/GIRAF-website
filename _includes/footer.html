@@ -19,10 +19,9 @@
       <h4>Navigation</h4>
       <ul>
         <li><a href="{{ '/' | relative_url }}">Home</a></li>
-        <li><a href="{{ '/about/' | relative_url }}">About</a></li>
-        <li><a href="{{ '/apps/' | relative_url }}">Apps</a></li>
-        <li><a href="{{ '/students/' | relative_url }}">For Students</a></li>
-        <li><a href="{{ '/contact/' | relative_url }}">Contact</a></li>
+        {% for item in site.data.settings.menu %}
+        <li><a href="{{ item.url | relative_url }}">{{ item.name }}</a></li>
+        {% endfor %}
       </ul>
     </div>
 
@@ -31,7 +30,6 @@
       <ul>
         <li><a href="https://aau-giraf.github.io/wiki/" target="_blank">Documentation</a></li>
         <li><a href="https://github.com/aau-giraf" target="_blank">GitHub</a></li>
-        <li><a href="{{ '/history/' | relative_url }}">History</a></li>
       </ul>
     </div>
   </div>

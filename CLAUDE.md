@@ -23,8 +23,9 @@ NOT on GitHub Pages.
 
 ## Commands
 
-`bundle` is **not guaranteed to be on PATH** in this environment (Ruby 3.4.8 is present; bundler may
-not be). If `bundle` is missing, install it (`gem install bundler`) before the commands below.
+`bundle` lives in Ruby's user gem bindir (`~/.local/share/gem/ruby/<ver>/bin`), added to PATH by
+`~/.config/fish/config.fish`. If `bundle` is "command not found" in some other shell/env, that dir
+isn't on PATH — add it (or `gem install bundler`) before the commands below.
 
 ```bash
 bundle install                        # install gems (Gemfile.lock is gitignored — not committed)

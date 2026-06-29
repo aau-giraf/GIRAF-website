@@ -5,7 +5,7 @@
         <img src="{{ '/assets/img/giraf-logo.png' | relative_url }}" alt="GIRAF Logo" class="footer-logo">
         <span class="footer-title">GIRAF</span>
       </a>
-      <p>A suite of free apps designed to assist children with autism spectrum disorder in their daily activities. Developed with love at Aalborg University.</p>
+      <p>An open-source research project at Aalborg University building communication tools for children with little or no verbal speech. Built and rebuilt by student teams since 2011.</p>
       <div class="footer-social">
         {% for item in site.data.settings.social %}
           <a href="{{ item.link }}" target="_blank" aria-label="{{ item.icon }}">
@@ -26,16 +26,18 @@
     </div>
 
     <div class="footer-resources">
-      <h4>Resources</h4>
+      <h4>Get involved</h4>
       <ul>
-        <li><a href="https://aau-giraf.github.io/wiki/" target="_blank">Documentation</a></li>
-        <li><a href="https://github.com/aau-giraf" target="_blank">GitHub</a></li>
+        <li><a href="{{ '/contact/' | relative_url }}">For institutions</a></li>
+        <li><a href="{{ '/students/' | relative_url }}">For students</a></li>
+        <li><a href="https://github.com/aau-giraf" target="_blank" rel="noopener">For developers (GitHub)</a></li>
+        <li><a href="https://aau-giraf.github.io/wiki/" target="_blank" rel="noopener">Developer wiki</a></li>
       </ul>
     </div>
   </div>
 
   <div class="footer-bottom">
-    <p>&copy; {{ site.time | date: '%Y' }} GIRAF Project. Part of Aalborg University.</p>
-    <p>Made with ❤️ in Denmark</p>
+    <p>&copy; {{ site.time | date: '%Y' }} GIRAF Project · Department of Computer Science, Aalborg University.</p>
+    <p>Open source · {{ site.time | date: '%Y' }} student cohort</p>
   </div>
 </footer>

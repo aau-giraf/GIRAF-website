@@ -4,24 +4,120 @@ title: Home
 ---
 
 <section class="hero">
-  <div class="hero-container">
-    <span class="hero-badge">Open Source Autism Apps</span>
-    <div class="hero-content">
-      <div class="hero-text">
-        <h1>Empowering children through <span class="highlight">playful technology</span></h1>
-        <p>GIRAF is a suite of free apps designed to assist children with autism spectrum disorder in their daily activities through visual schedules, pictograms, and interactive tools.</p>
-        <div class="hero-buttons">
-          <a href="{{ '/apps/' | relative_url }}" class="btn btn-primary">Download Free</a>
-          <a href="{{ '/about/' | relative_url }}" class="btn btn-secondary">Learn More →</a>
+  <div class="band-inner hero-grid">
+    <div class="hero-text">
+      <p class="eyebrow">A research project at Aalborg University · since 2011</p>
+      <h1>Visual tools for autistic children with <span class="highlight">little or no verbal speech.</span></h1>
+      <p class="hero-sub">GIRAF builds visual schedules, communication boards and meal plans. Students design and test them with special-needs schools, and rebuild them each semester.</p>
+      <div class="hero-buttons">
+        <a href="#apps" class="btn btn-primary">See the apps</a>
+        <a href="{{ '/students/' | relative_url }}" class="btn btn-secondary">Work on GIRAF</a>
+      </div>
+    </div>
+    <figure class="hero-shot">
+      <img src="{{ '/assets/screenshots/weekplanner/03-weekplan.png' | relative_url }}" alt="The Weekplanner app showing a child's day as a column of pictogram activity cards, the first activities ticked off as done">
+      <figcaption>Weekplanner: a child's day as pictogram cards, ticked off as it goes.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="band band--raised" id="what">
+  <div class="band-inner intro">
+    <p class="eyebrow">The project</p>
+    <h2>Run by student teams, every semester since 2011.</h2>
+    <p class="intro__lead">GIRAF is a research and teaching project at Aalborg University's Department of Computer Science. Since 2011, student teams have built and rebuilt a small family of communication tools for children with little or no verbal speech, and tested them in special-needs schools. The apps below are in daily use at our partner school. They are also always partway through another rebuild, because that is how the project runs.</p>
+  </div>
+</section>
+
+<section class="band" id="apps">
+  <div class="band-inner">
+    <p class="eyebrow">The apps</p>
+    <h2>Three tools, one shared backend.</h2>
+    <p class="band-sub">Each app is a Flutter front end over the shared GIRAF Core service. They are at different stages of maturity, noted on each card.</p>
+
+    <div class="app-board">
+      <a class="app-card app-card--time" href="{{ '/apps/weekplanner/' | relative_url }}">
+        <div class="app-card__shot">
+          <img src="{{ '/assets/screenshots/weekplanner/03-weekplan.png' | relative_url }}" alt="Weekplanner showing a child's day as a column of pictogram activity cards, the first two ticked off as done" loading="lazy">
         </div>
-      </div>
-      <div class="hero-illustration">
-        <img src="{{ '/assets/img/giraf-hero.svg' | relative_url }}" alt="Friendly giraffe mascot">
-      </div>
+        <div class="app-card__body">
+          <span class="app-card__status app-card__status--good">In daily use</span>
+          <h3>Weekplanner</h3>
+          <p>Caregivers build a child's day and week from pictograms. The child sees what is happening and in what order, and ticks off each activity as it is done.</p>
+          <span class="app-card__more">Screenshots &amp; details →</span>
+        </div>
+      </a>
+
+      <a class="app-card app-card--voice" href="{{ '/apps/vta/' | relative_url }}">
+        <div class="app-card__shot">
+          <img src="{{ '/assets/screenshots/vta/03-board.png' | relative_url }}" alt="A VTA communication board with a visual artefact placed on a talking mat next to its spoken label" loading="lazy">
+        </div>
+        <div class="app-card__body">
+          <span class="app-card__status app-card__status--wip">In active development</span>
+          <h3>VTA: communication boards</h3>
+          <p>Boards of visual artefacts, each with an image, a label and a sound, shared live between a child and a caregiver. Includes text-to-speech and video calling.</p>
+          <span class="app-card__more">Screenshots &amp; details →</span>
+        </div>
+      </a>
+
+      <a class="app-card app-card--food" href="{{ '/apps/foodplanner/' | relative_url }}">
+        <div class="app-card__shot">
+          <img src="{{ '/assets/screenshots/foodplanner/04-madpakke.png' | relative_url }}" alt="Foodplanner showing a daily lunch plan with a realistic photo of the food" loading="lazy">
+        </div>
+        <div class="app-card__body">
+          <span class="app-card__status app-card__status--early">Early build</span>
+          <h3>Foodplanner</h3>
+          <p>Visual meal plans (<em>madpakker</em>) built from photos of real food, for children with selective eating. Based on the Picture Exchange Communication System.</p>
+          <span class="app-card__more">Screenshots &amp; details →</span>
+        </div>
+      </a>
     </div>
   </div>
 </section>
 
-<div class="home-content">
-  {{ content }}
-</div>
+<section class="band band--ink" id="impact">
+  <div class="band-inner impact">
+    <p class="eyebrow eyebrow--light">Where it comes from</p>
+    <h2>Developed with Egebakken Specialskole.</h2>
+    <div class="fact-row">
+      <div class="fact">
+        <span class="fact__num">2011</span>
+        <span class="fact__label">Running every semester since</span>
+      </div>
+      <div class="fact">
+        <span class="fact__num">3</span>
+        <span class="fact__label">Disciplines on each team: software, IT and interaction design</span>
+      </div>
+      <div class="fact">
+        <span class="fact__num">100%</span>
+        <span class="fact__label">Open source, at github.com/aau-giraf</span>
+      </div>
+    </div>
+    <p class="impact__partner">Our main partner is <strong>Egebakken Specialskole</strong> in Vodskov, with the Center for Autism &amp; ADHD in Aalborg. Features come from classroom observation, staff interviews and usability testing with real children.</p>
+  </div>
+</section>
+
+<section class="band band--raised" id="principles">
+  <div class="band-inner">
+    <p class="eyebrow">How it's designed</p>
+    <h2>Five principles, for the apps and this page.</h2>
+    <p class="band-sub">From TEACCH and PECS practice.</p>
+    <ul class="principle-grid">
+      <li><span class="principle__no">01</span><h3>Predictability</h3><p>What happens next is always visible.</p></li>
+      <li><span class="principle__no">02</span><h3>Visual clarity</h3><p>One idea per card, shown in pictures first.</p></li>
+      <li><span class="principle__no">03</span><h3>Simplicity</h3><p>As few steps as possible.</p></li>
+      <li><span class="principle__no">04</span><h3>Consistency</h3><p>The same action looks and works the same way everywhere.</p></li>
+      <li><span class="principle__no">05</span><h3>Independence</h3><p>The child can do it without help.</p></li>
+    </ul>
+  </div>
+</section>
+
+<section class="band" id="news">
+  <div class="band-inner">
+    <p class="eyebrow">From the project</p>
+    <h2>Latest news</h2>
+    <div class="home-content">
+      {{ content }}
+    </div>
+  </div>
+</section>

@@ -129,44 +129,45 @@
 */
 
 .post-card {
-  background: white;
-  border-radius: 8px;
-  padding: 1.5rem;
-  margin-bottom: 1.5rem;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-  border: 1px solid #eee;
+  background: $paper-raised;
+  border-radius: $r-lg;
+  padding: $s-3;
+  border: 1px solid $line;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 
   &:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 24px rgba(31, 27, 22, 0.1);
   }
 
   h3 {
     margin: 0 0 0.5rem 0;
-    font-size: 1.25rem;
+    font-size: 1.2rem;
 
     a {
-      color: #333;
+      color: $ink;
       text-decoration: none;
 
       &:hover {
-        color: #d4a373;
+        color: $amber-dark;
       }
     }
   }
 
   time {
     display: block;
-    font-size: 0.85rem;
-    color: #888;
-    margin-bottom: 0.75rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $cat-time;
+    margin-bottom: 0.6rem;
   }
 
   p {
     margin: 0;
-    color: #555;
-    line-height: 1.5;
+    color: $ink-soft;
+    line-height: 1.55;
   }
 }
 

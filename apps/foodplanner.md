@@ -6,7 +6,7 @@ permalink: /apps/foodplanner/
 
 [← Back to all applications]({{ '/apps/' | relative_url }})
 
-A meal-planning application for institutions caring for children with selective eating habits — a
+A meal-planning application for institutions caring for children with selective eating habits: a
 common challenge for many autistic individuals. The app helps caregivers create structured, visual
 meal plans ("madpakker") that show children exactly what to expect at mealtimes, using realistic
 food images in the spirit of the Picture Exchange Communication System (PECS).
@@ -23,7 +23,7 @@ and a built-in feedback chat connects home and school.
 
 <figure>
   <img src="{{ '/assets/screenshots/foodplanner/05-madpakke-fruit.png' | relative_url }}" alt="Lunch plan for another day showing fruit and vegetables">
-  <figcaption><em>Stepping through the days — each meal shown with its own food photo.</em></figcaption>
+  <figcaption><em>Stepping through the days: each meal shown with its own food photo.</em></figcaption>
 </figure>
 
 <figure>
@@ -46,5 +46,5 @@ and a built-in feedback chat connects home and school.
 Flutter (iOS/Android/Web) + ASP.NET API + PostgreSQL + MinIO image storage.
 
 **Repositories:**
-- [foodplanner](https://github.com/aau-giraf/foodplanner) — mobile/web application
-- [foodplanner-api](https://github.com/aau-giraf/foodplanner-api) — backend API
+- [foodplanner](https://github.com/aau-giraf/foodplanner): mobile/web application
+- [foodplanner-api](https://github.com/aau-giraf/foodplanner-api): backend API

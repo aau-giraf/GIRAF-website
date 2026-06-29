@@ -19,17 +19,17 @@ citizens and pictograms shared through the central **giraf-core** service. Origi
 
 <figure>
   <img src="{{ '/assets/screenshots/weekplanner/03-weekplan.png' | relative_url }}" alt="A day plan of pictogram activity cards with times, the first two completed">
-  <figcaption><em>A child's day — pictogram activity cards with times, the first two ticked off as done.</em></figcaption>
+  <figcaption><em>A child's day: pictogram activity cards with times, the first two ticked off as done.</em></figcaption>
 </figure>
 
 <figure>
   <img src="{{ '/assets/screenshots/weekplanner/04-week-overview.png' | relative_url }}" alt="Week overview with all seven days side by side">
-  <figcaption><em>The week overview — a calm look at the whole week at a glance.</em></figcaption>
+  <figcaption><em>The week overview: a calm look at the whole week at a glance.</em></figcaption>
 </figure>
 
 <figure>
   <img src="{{ '/assets/screenshots/weekplanner/05-add-activity.png' | relative_url }}" alt="Add-activity form with pictogram search, upload and AI generation">
-  <figcaption><em>Adding an activity — search the pictogram library, upload an image, or generate one with AI.</em></figcaption>
+  <figcaption><em>Adding an activity: search the pictogram library, upload an image, or generate one with AI.</em></figcaption>
 </figure>
 
 <figure>

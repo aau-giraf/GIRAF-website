@@ -30,7 +30,7 @@ The project expanded with two new application branches:
 
 **Foodplanner** - Addressing selective eating, which is common among autistic children. The application helps caregivers plan structured meals using visual representations, based on principles from the Picture Exchange Communication System (PECS).
 
-**Visual Tangible Artefacts (VTA)** - A novel approach combining physical objects with digital scheduling. Includes AI-powered image generation to create personalized visual aids.
+**Visual Tangible Artefacts (VTA)** - A digital communication tool. Children express themselves through boards of visual artefacts (an image, a label and a sound), shared live with a caregiver, with text-to-speech and built-in video calling. Includes AI-generated images for personalised artefacts.
 
 ### Multi-Project Model
 

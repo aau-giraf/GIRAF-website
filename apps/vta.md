@@ -19,17 +19,17 @@ administrators manage users and the pairings that link caregivers to the childre
 
 <figure>
   <img src="{{ '/assets/screenshots/vta/04-artefact-library.png' | relative_url }}" alt="A library of communication artefacts: food, toys and everyday items">
-  <figcaption><em>The artefact library — food, toys and everyday items a child can communicate with.</em></figcaption>
+  <figcaption><em>The artefact library: food, toys and everyday items a child can communicate with.</em></figcaption>
 </figure>
 
 <figure>
   <img src="{{ '/assets/screenshots/vta/03-board.png' | relative_url }}" alt="An artefact placed on a communication board">
-  <figcaption><em>Building a board — an artefact placed on the talking mat with its spoken label.</em></figcaption>
+  <figcaption><em>Building a board: an artefact placed on the talking mat with its spoken label.</em></figcaption>
 </figure>
 
 <figure>
   <img src="{{ '/assets/screenshots/vta/05-create-artefact.png' | relative_url }}" alt="Creating a new artefact by photo, upload or AI">
-  <figcaption><em>Creating a new artefact — take a photo, upload an image, or generate one with AI.</em></figcaption>
+  <figcaption><em>Creating a new artefact: take a photo, upload an image, or generate one with AI.</em></figcaption>
 </figure>
 
 <figure>

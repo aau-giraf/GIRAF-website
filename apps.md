@@ -5,7 +5,7 @@ permalink: /apps/
 ---
 
 The GIRAF platform is a family of apps that support autistic children with little or no verbal
-communication — at school, at home and in between. Each app focuses on one part of the day and
+communication, at school, at home and in between. Each app focuses on one part of the day and
 shares a common foundation for users, organisations and visual symbols.
 
 ## Active Projects
@@ -17,7 +17,7 @@ shares a common foundation for users, organisations and visual symbols.
 </a>
 
 A visual weekly schedule. Caregivers build a child's day and week from **pictograms**, so the child
-can see what is happening, in what order, and when — ticking off each activity as the day goes.
+can see what is happening, in what order, and when, ticking off each activity as the day goes.
 
 **Technology:** Flutter (iOS/Android/Web) + ASP.NET API + PostgreSQL
 
@@ -32,7 +32,7 @@ can see what is happening, in what order, and when — ticking off each activity
 </a>
 
 A meal-planning app for children with selective eating habits. Parents and teachers build visual
-meal plans ("madpakker") with realistic food images — a PECS-inspired approach — so a child knows
+meal plans ("madpakker") with realistic food images, a PECS-inspired approach, so a child knows
 exactly what to expect at mealtimes.
 
 **Technology:** Flutter (iOS/Android/Web) + ASP.NET API + PostgreSQL + MinIO

@@ -10,40 +10,13 @@ permalink: /about/
 
 ## What is GIRAF?
 
-**GIRAF** (Graphical Interface Resource for Autistic Folks) is a suite of tablet applications for autistic children, particularly those with minimal or no verbal communication. Since 2011, student teams at Aalborg University have developed these tools in direct partnership with Danish special education institutions.
+**GIRAF** is a set of tablet apps for autistic children, particularly those with minimal or no verbal communication. Since 2011, student teams at Aalborg University have built them in partnership with Danish special-education institutions.
 
 ---
 
-## Our Applications
+## The applications
 
-### Foodplanner
-
-The **Foodplanner** app helps autistic children understand and engage with their meals. Many children with autism experience challenges around food - selective eating, sensitivity to textures, and difficulty with unstructured mealtimes.
-
-**Key features:**
-- Parents upload photos of actual food items from their child's lunchbox
-- Children can view and select food items visually
-- Children arrange food in their preferred eating order
-- Teachers and parents can communicate about meals
-- Search function to quickly find ingredients
-
-The app gives children control and predictability over an often stressful part of the day, while helping caregivers track eating patterns and ensure balanced nutrition.
-
-### Visual Tangible Artefacts (VTA)
-
-**VTA** is a communication tool for non-verbal or minimally verbal children. It functions as a digital communication board where children can express themselves through pictures and sounds.
-
-**Key features:**
-- **Remote viewing** - Parents and teachers can view a child's communication board in real-time
-- **Multiple boards** - Different boards for different contexts (home, school, activities)
-- **Audio support** - Text-to-speech for pictograms
-- **Customizable layouts** - Adapted to each child's needs and abilities
-
-VTA bridges the communication gap between children, educators, and families - ensuring everyone stays connected throughout the day.
-
-### Weekplanner
-
-The **Weekplanner** provides visual schedule management for daily and weekly routines. Children can see their activities laid out visually, mark tasks as complete, and understand what comes next.
+GIRAF is three apps over a shared backend: **Weekplanner** (visual schedules), **VTA** (communication boards) and **Foodplanner** (visual meal plans). Each one is described in detail, with screenshots and its current state, on the [applications page]({{ '/apps/' | relative_url }}).
 
 ---
 
@@ -124,10 +97,11 @@ These principles are grounded in TEACCH methodology, Applied Behavior Analysis r
 All GIRAF applications are open source and available on [GitHub](https://github.com/aau-giraf).
 
 Current repositories:
-- [foodplanner](https://github.com/aau-giraf/foodplanner) - Flutter app
-- [foodplanner-api](https://github.com/aau-giraf/foodplanner-api) - .NET backend
-- [visual-tangible-artefacts](https://github.com/aau-giraf/visual-tangible-artefacts) - VTA app
-- [weekplan](https://github.com/aau-giraf/weekplan) - Week planner
+- [weekplanner](https://github.com/aau-giraf/weekplanner) - Weekplanner app and backend
+- [visual-tangible-artefacts](https://github.com/aau-giraf/visual-tangible-artefacts) - VTA app and API
+- [foodplanner](https://github.com/aau-giraf/foodplanner) - Foodplanner app
+- [foodplanner-api](https://github.com/aau-giraf/foodplanner-api) - Foodplanner backend
+- [giraf-core](https://github.com/aau-giraf/giraf-core) - Shared backend: users, orgs, citizens, pictograms
 - [wiki](https://github.com/aau-giraf/wiki) - Documentation
 
 ---

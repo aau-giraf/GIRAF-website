@@ -25,7 +25,7 @@ The wiki contains:
 
 Depending on your semester and study program, you might:
 
-- **Develop new features** for Foodplanner or VTA
+- **Develop new features** for Weekplanner, VTA or Foodplanner
 - **Improve user experience** based on feedback from partner institutions
 - **Research user needs** through collaboration with Egebakken Specialskole
 - **Write documentation** and improve onboarding for future students
@@ -45,9 +45,11 @@ This interdisciplinary collaboration mirrors real-world software development.
 All code lives at [github.com/aau-giraf](https://github.com/aau-giraf).
 
 Key repositories:
-- [foodplanner](https://github.com/aau-giraf/foodplanner) - Foodplanner mobile app
-- [foodplanner-api](https://github.com/aau-giraf/foodplanner-api) - Foodplanner backend
+- [weekplanner](https://github.com/aau-giraf/weekplanner) - Weekplanner app and backend
 - [visual-tangible-artefacts](https://github.com/aau-giraf/visual-tangible-artefacts) - VTA app and API
+- [foodplanner](https://github.com/aau-giraf/foodplanner) - Foodplanner app
+- [foodplanner-api](https://github.com/aau-giraf/foodplanner-api) - Foodplanner backend
+- [giraf-core](https://github.com/aau-giraf/giraf-core) - Shared backend service
 - [wiki](https://github.com/aau-giraf/wiki) - Documentation
 
 ## Questions?

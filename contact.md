@@ -8,11 +8,7 @@ permalink: /contact/
 
 ### For Students
 
-If you're an AAU student interested in working on GIRAF:
-
-1. Check the [Getting Started guide](https://aau-giraf.github.io/wiki/Getting_Started/) on our wiki
-2. Browse our [GitHub organization](https://github.com/aau-giraf) to explore the codebase
-3. Contact your course coordinator about joining a GIRAF project group
+If you're an AAU student who wants to work on GIRAF, start on the [For Students]({{ '/students/' | relative_url }}) page, then contact your course coordinator about joining a project group.
 
 ### For Institutions
 

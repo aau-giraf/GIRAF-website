@@ -45,7 +45,7 @@ defaults:
     values:
       layout: "post"
 
-# Exclude from processing
+# Exclude from processing (kept out of the built _site/ so they aren't served publicly)
 exclude:
   - Gemfile
   - Gemfile.lock
@@ -55,3 +55,8 @@ exclude:
   - vendor/gems/
   - vendor/ruby/
   - README.md
+  - CLAUDE.md
+  - deploy.sh
+  - new-post.sh
+  - site.sh
+  - .env.example

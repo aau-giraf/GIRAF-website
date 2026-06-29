@@ -3,7 +3,6 @@ layout: post
 title: "VTA Gets AI-Powered Image Generation"
 date: 2024-11-01
 image: 'giraf-logo.png'
-featured: true
 ---
 
 The Visual Tangible Artefacts project now includes AI-powered image generation, allowing caregivers to create personalized pictograms for individual children.

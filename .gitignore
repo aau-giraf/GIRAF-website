@@ -33,5 +33,9 @@ npm-debug.log*
 *.tmp
 *.temp
 
+# Local tooling / agent state
+.claude/
+
 # Environment variables and credentials
 .env
+.env.*

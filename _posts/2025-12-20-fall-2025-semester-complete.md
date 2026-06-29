@@ -3,7 +3,6 @@ layout: post
 title: "Fall 2025 Semester Complete: New Features for Foodplanner and VTA"
 date: 2025-12-20
 image: 'giraf-logo.png'
-featured: true
 ---
 
 The Fall 2025 semester has concluded with significant improvements to both Foodplanner and Visual Tangible Artefacts (VTA). Student teams from Aalborg University worked closely with Egebakken Specialskole throughout the semester to ensure these updates address real needs.

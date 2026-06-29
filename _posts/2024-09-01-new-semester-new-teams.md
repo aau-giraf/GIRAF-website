@@ -3,7 +3,6 @@ layout: post
 title: "Welcome Fall 2024 Students"
 date: 2024-09-01
 image: 'giraf-logo.png'
-featured: false
 ---
 
 Welcome to the new cohort of GIRAF developers! This semester we have teams from:

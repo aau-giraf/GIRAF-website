@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# New post creation script for Giraf Wiki
+# New blog post creation script for the GIRAF website
 # Usage: ./new-post.sh "Post Title" [--draft]
 
 set -e
@@ -70,57 +70,21 @@ if [ "$IS_DRAFT" = true ]; then
     CONTENT="---
 layout: post
 title: \"$TITLE\"
-tags: [giraf, wiki]
+tags: [giraf]
 ---
-
-# $TITLE
 
 Write your post content here.
-
-## Overview
-
-Brief description of the topic.
-
-## Details
-
-More detailed information about the topic.
-
-## Resources
-
-- [Related Documentation](https://example.com)
-- [GitHub Repository](https://github.com/example/repo)
-
----
-
-*This post is part of the Giraf Wiki project documentation.*"
+"
 else
     CONTENT="---
 layout: post
 title: \"$TITLE\"
 date: $(date +%Y-%m-%d)
-tags: [giraf, wiki]
+tags: [giraf]
 ---
-
-# $TITLE
 
 Write your post content here.
-
-## Overview
-
-Brief description of the topic.
-
-## Details
-
-More detailed information about the topic.
-
-## Resources
-
-- [Related Documentation](https://example.com)
-- [GitHub Repository](https://github.com/example/repo)
-
----
-
-*This post is part of the Giraf Wiki project documentation.*"
+"
 fi
 
 # Create the file
@@ -141,11 +105,11 @@ elif command -v nano &> /dev/null; then
     fi
 fi
 
-echo -e "${BLUE}💡 Tips:${NC}"
+echo -e "${BLUE}Tips:${NC}"
 if [ "$IS_DRAFT" = true ]; then
-    echo "  • Preview drafts: ./wiki-helper.sh drafts"
-    echo "  • Publish later: move from _drafts to _posts with date prefix"
+    echo "  - Preview drafts: ./site.sh drafts"
+    echo "  - Publish later: move from _drafts to _posts with a date prefix"
 else
-    echo "  • Preview: ./wiki-helper.sh serve"
-    echo "  • Deploy: ./wiki-helper.sh deploy"
+    echo "  - Preview: ./site.sh serve"
+    echo "  - Deploy:  ./site.sh deploy"
 fi

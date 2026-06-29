@@ -1,67 +1,50 @@
-# Giraf Wiki
+# GIRAF website
 
-A Jekyll-based documentation wiki for the Giraf project. This site is built locally and the static files are then uploaded to a hosting provider.
+The public GIRAF site — a Jekyll static site (project info, app overviews, and news). Built locally
+and deployed over **SSH to a Hetzner box**. It is **not** on GitHub Pages, and it is **not** the
+technical wiki (that is a separate MkDocs repo, `aau-giraf/wiki`).
 
-## Local Development
+- **Canonical URL:** `https://giraf.cs.aau.dk` (set as `url` in `_config.yml`; this is the intended
+  production home and what generated sitemap/SEO links point to).
+- **Currently live (test):** `https://giraf.nbhansen.dk` — a temporary Hetzner+Cloudflare deployment.
+  Don't bake this domain into config; it's not permanent.
 
-To work on the site locally, you'll need Ruby and Bundler installed.
+> Note: `giraf.cs.aau.dk` today still serves an **old, unrelated WordPress site** — not this repo.
+> Until DNS/hosting is cut over, this Jekyll site lives only at the nbhansen.dk test domain.
 
-1.  **Install Dependencies:**
-    ```bash
-    bundle install
-    ```
+## Local development
 
-2.  **Run the Development Server:**
-    ```bash
-    ./wiki-helper.sh serve
-    ```
-    This will start a local server, usually at `http://127.0.0.1:4000/`. The site will automatically rebuild when you make changes to the files.
+Requires Ruby and Bundler.
 
-## Managing Content
-
-### Blog Posts and News
-
-*   **Location:** All blog posts are located in the `_posts` directory.
-*   **Creating a New Post:** To create a new blog post, run the following command:
-    ```bash
-    ./new-post.sh "Your Post Title"
-    ```
-*   **News Feed:** The "Recent News" feed on the homepage automatically displays the titles of the most recent posts.
-
-### Featured Posts
-
-To "lock" a post to the main area of the homepage, add `featured: true` to the front matter of the post's file.
-
-**Example (`_posts/your-post-file.md`):**
-```markdown
----
-layout: post
-title: "My Awesome Post"
-date: 2025-09-27 00:00:00
-image: 'some-image.jpg'
-featured: true
----
-
-Your post content here...
+```bash
+bundle install        # install gems
+./site.sh serve       # dev server at http://127.0.0.1:4000, rebuilds on change
 ```
 
-### Wiki Pages
+`./site.sh` with no argument lists every command.
 
-*   **Location:** All wiki pages are located in the `_wiki` directory.
-*   **Creating a New Wiki Page:** To create a new wiki page, run this command:
-    ```bash
-    ./wiki-helper.sh new "Your Page Title"
-    ```
+## Content
 
-## Building and Deploying
+- **Pages** are markdown files at the repo root (`about.md`, `apps.md`, `history.md`,
+  `students.md`, `contact.md`, `index.md`, `blog.md`), each with its own `permalink`.
+- **App pages** live in `apps/` (`weekplanner.md`, `foodplanner.md`, `vta.md`); `apps.md` indexes them.
+- **Blog posts** live in `_posts/` as `YYYY-MM-DD-title.md`. Create one with:
+  ```bash
+  ./site.sh post "Your Post Title"     # or:  ./site.sh draft "..."  (into _drafts/)
+  ```
+  The homepage (`index.md`) automatically lists the 5 most recent posts by date.
+- **Navigation** is defined in `_data/settings.yml` (`menu:`) — edit it there, not in the templates.
 
-*   **Build the Site:** To generate the static site for production, run:
-    ```bash
-    ./wiki-helper.sh build
-    ```
-    The output will be placed in the `_site` directory.
+## Build and deploy
 
-*   **Deploy:** To deploy the site, you can use the provided deployment script, which uses FTP. You will need to configure your credentials in a `.env` file (see `.env.example`).
-    ```bash
-    ./wiki-helper.sh deploy
-    ```
+```bash
+./site.sh build       # production build into _site/
+./site.sh deploy      # build, then rsync _site/ to the Hetzner box over SSH
+```
+
+`deploy.sh` runs a production build, then `rsync -az --delete` of `_site/` to
+`root@77.42.34.208:/var/www/giraf/` over SSH (key auth — no password, no `.env`). The box serves that
+directory directly via `giraf-web.service` (`python3 -m http.server :8088`) behind a cloudflared
+tunnel, so synced files go **live immediately — no restart**. `--delete` only ever affects files
+inside `/var/www/giraf/`; nothing else on the (multi-purpose) server is touched. Override the target
+with `DEPLOY_HOST` / `DEPLOY_PATH` env vars.

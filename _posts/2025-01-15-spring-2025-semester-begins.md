@@ -3,7 +3,6 @@ layout: post
 title: "Spring 2025 Semester Begins"
 date: 2025-01-15
 image: 'giraf-logo.png'
-featured: true
 ---
 
 A new semester of GIRAF development is underway! This spring, student teams will continue work on Foodplanner and Visual Tangible Artefacts (VTA).

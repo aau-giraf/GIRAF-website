@@ -4,50 +4,69 @@ title: Our Applications
 permalink: /apps/
 ---
 
+The GIRAF platform is a family of apps that support autistic children with little or no verbal
+communication — at school, at home and in between. Each app focuses on one part of the day and
+shares a common foundation for users, organisations and visual symbols.
+
 ## Active Projects
 
-### Foodplanner
+### Weekplanner
 
-A meal planning application for institutions caring for children with selective eating habits - a common challenge for many autistic individuals.
+<a href="{{ '/apps/weekplanner/' | relative_url }}">
+  <img src="{{ '/assets/screenshots/weekplanner/03-weekplan.png' | relative_url }}" alt="A child's day shown as pictogram activity cards">
+</a>
 
-The app helps caregivers create structured, visual meal plans that show children exactly what to expect at mealtimes. The approach is based on principles from the Picture Exchange Communication System (PECS), using realistic images to represent food items.
+A visual weekly schedule. Caregivers build a child's day and week from **pictograms**, so the child
+can see what is happening, in what order, and when — ticking off each activity as the day goes.
 
 **Technology:** Flutter (iOS/Android/Web) + ASP.NET API + PostgreSQL
 
-**Repositories:**
-- [foodplanner](https://github.com/aau-giraf/foodplanner) - Mobile/web application
-- [foodplanner-api](https://github.com/aau-giraf/foodplanner-api) - Backend API
+[View screenshots & details →]({{ '/apps/weekplanner/' | relative_url }})
+
+---
+
+### Foodplanner
+
+<a href="{{ '/apps/foodplanner/' | relative_url }}">
+  <img src="{{ '/assets/screenshots/foodplanner/04-madpakke.png' | relative_url }}" alt="A child's lunch plan with a real food image">
+</a>
+
+A meal-planning app for children with selective eating habits. Parents and teachers build visual
+meal plans ("madpakker") with realistic food images — a PECS-inspired approach — so a child knows
+exactly what to expect at mealtimes.
+
+**Technology:** Flutter (iOS/Android/Web) + ASP.NET API + PostgreSQL + MinIO
+
+[View screenshots & details →]({{ '/apps/foodplanner/' | relative_url }})
 
 ---
 
 ### Visual Tangible Artefacts (VTA)
 
-A novel system that bridges physical and digital worlds. Children can interact with tangible objects that connect to their digital schedule, combining the familiarity of physical manipulation with the flexibility of digital tools.
+<a href="{{ '/apps/vta/' | relative_url }}">
+  <img src="{{ '/assets/screenshots/vta/04-artefact-library.png' | relative_url }}" alt="A library of visual communication artefacts">
+</a>
 
-Features AI-powered image generation to create personalized visual aids tailored to individual children's needs.
+A digital communication tool built around **boards** of visual artefacts (image + label + sound).
+Boards can be shared live between a child and caregiver, with built-in video calling and
+text-to-speech.
 
-**Technology:** Flutter + ASP.NET API + MySQL
+**Technology:** Flutter (iOS/Android/Web) + Vue 3 admin + ASP.NET API + SignalR + MySQL
 
-**Repository:**
-- [visual-tangible-artefacts](https://github.com/aau-giraf/visual-tangible-artefacts)
+[View screenshots & details →]({{ '/apps/vta/' | relative_url }})
 
 ---
 
 ## Archived Projects
 
-### Weekplanner
+### Weekplan (original)
 
-The original GIRAF application - a visual weekly schedule board that helped children see and anticipate their daily activities. Developed from 2011-2019, Weekplanner served as the foundation for all subsequent GIRAF work.
+The original GIRAF Weekplanner (2011–2019) was the foundation for all later GIRAF work. Its
+codebase remains available for reference; it has since been rebuilt as the modern Weekplanner above.
 
-Development has concluded, but the codebase remains available for reference.
-
-**Repository:**
-- [weekplan](https://github.com/aau-giraf/weekplan)
+**Repository:** [weekplan](https://github.com/aau-giraf/weekplan)
 
 ---
 
-## All Repositories
-
-All GIRAF code is open source and hosted at [github.com/aau-giraf](https://github.com/aau-giraf).
-
-For technical documentation, setup guides, and contribution guidelines, see our [developer wiki](https://aau-giraf.github.io/wiki/).
+All GIRAF code is open source at [github.com/aau-giraf](https://github.com/aau-giraf). For technical
+documentation and setup guides, see our [developer wiki](https://aau-giraf.github.io/wiki/).

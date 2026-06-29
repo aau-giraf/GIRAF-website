@@ -8,8 +8,6 @@ The GIRAF platform is a family of apps that support autistic children with littl
 communication, at school, at home and in between. Each app focuses on one part of the day and
 shares a common foundation for users, organisations and visual symbols.
 
-## Active Projects
-
 ### Weekplanner
 
 <a href="{{ '/apps/weekplanner/' | relative_url }}">
@@ -57,16 +55,6 @@ text-to-speech.
 
 ---
 
-## Archived Projects
-
-### Weekplan (original)
-
-The original GIRAF Weekplanner (2011–2019) was the foundation for all later GIRAF work. Its
-codebase remains available for reference; it has since been rebuilt as the modern Weekplanner above.
-
-**Repository:** [weekplan](https://github.com/aau-giraf/weekplan)
-
----
-
-All GIRAF code is open source at [github.com/aau-giraf](https://github.com/aau-giraf). For technical
-documentation and setup guides, see our [developer wiki](https://aau-giraf.github.io/wiki/).
+All GIRAF code is open source at [github.com/aau-giraf](https://github.com/aau-giraf), including
+earlier and experimental work from past semesters. For technical documentation and setup guides,
+see our [developer wiki](https://aau-giraf.github.io/wiki/).

@@ -10,7 +10,7 @@ permalink: /about/
 
 ## What is GIRAF?
 
-**GIRAF** is a set of tablet apps for autistic children, particularly those with minimal or no verbal communication. Since 2011, student teams at Aalborg University have built them in partnership with Danish special-education institutions.
+**GIRAF** (Graphical Interface Resource for Autistic Folks) is a set of tablet apps for autistic children, particularly those with minimal or no verbal communication. Since 2011, student teams at Aalborg University have built them in partnership with Danish special-education institutions.
 
 ---
 

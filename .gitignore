@@ -33,8 +33,15 @@ npm-debug.log*
 *.tmp
 *.temp
 
-# Local tooling / agent state
+# AI assistant / LLM tooling — keep out of this public repo
 .claude/
+CLAUDE.md
+GEMINI.md
+AGENTS.md
+.cursor/
+.cursorrules
+.aider*
+.github/copilot-instructions.md
 
 # Environment variables and credentials
 .env

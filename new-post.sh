@@ -111,5 +111,5 @@ if [ "$IS_DRAFT" = true ]; then
     echo "  - Publish later: move from _drafts to _posts with a date prefix"
 else
     echo "  - Preview: ./site.sh serve"
-    echo "  - Deploy:  ./site.sh deploy"
+    echo "  - Publish: commit and push to main (GitHub Actions deploys to Pages)"
 fi

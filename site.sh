@@ -20,8 +20,7 @@ show_help() {
     echo "  ./site.sh drafts        - Dev server including drafts + livereload"
     echo "  ./site.sh build         - Production build into _site/"
     echo ""
-    echo "Publishing:"
-    echo "  ./site.sh deploy        - Build and rsync _site/ to the Hetzner box over SSH"
+    echo "Publishing: push to main — GitHub Actions builds and deploys to Pages."
     echo ""
     echo "Utilities:"
     echo "  ./site.sh status        - Show post counts and build status"
@@ -46,9 +45,6 @@ case "$1" in
     "build")
         echo -e "${BLUE}Building site...${NC}"
         JEKYLL_ENV=production bundle exec jekyll build
-        ;;
-    "deploy")
-        ./deploy.sh
         ;;
     "status")
         echo -e "${BLUE}Site status${NC}"

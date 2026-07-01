@@ -55,8 +55,6 @@ exclude:
   - vendor/gems/
   - vendor/ruby/
   - README.md
-  - CLAUDE.md
-  - deploy.sh
   - new-post.sh
   - site.sh
-  - .env.example
+  - .github

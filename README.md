@@ -1,16 +1,16 @@
 # GIRAF website
 
-The public GIRAF site — a Jekyll static site (project info, app overviews, and news). Built locally
-and deployed over **SSH to a Hetzner box**. It is **not** on GitHub Pages, and it is **not** the
-technical wiki (that is a separate MkDocs repo, `aau-giraf/wiki`).
+The public GIRAF site — a Jekyll static site (project info, app overviews, and news). Deployed to
+**GitHub Pages via GitHub Actions**: pushing to `main` builds and publishes automatically. It is
+**not** the technical wiki (that is a separate MkDocs repo, `aau-giraf/wiki`).
 
-- **Canonical URL:** `https://giraf.cs.aau.dk` (set as `url` in `_config.yml`; this is the intended
+- **Canonical URL:** `https://giraf.cs.aau.dk` (set as `url` in `_config.yml`; the intended
   production home and what generated sitemap/SEO links point to).
-- **Currently live (test):** `https://giraf.nbhansen.dk` — a temporary Hetzner+Cloudflare deployment.
-  Don't bake this domain into config; it's not permanent.
+- **Currently live:** `https://aau-giraf.github.io/GIRAF-website/` until AAU IT points DNS
+  (`giraf.cs.aau.dk CNAME aau-giraf.github.io`) and the custom domain is set in Settings → Pages.
 
-> Note: `giraf.cs.aau.dk` today still serves an **old, unrelated WordPress site** — not this repo.
-> Until DNS/hosting is cut over, this Jekyll site lives only at the nbhansen.dk test domain.
+> Note: `giraf.cs.aau.dk` today still serves an **old, unrelated WordPress site** — not this repo,
+> until the DNS cutover happens.
 
 ## Local development
 
@@ -38,13 +38,11 @@ bundle install        # install gems
 ## Build and deploy
 
 ```bash
-./site.sh build       # production build into _site/
-./site.sh deploy      # build, then rsync _site/ to the Hetzner box over SSH
+./site.sh build       # production build into _site/ (the same build CI runs)
 ```
 
-`deploy.sh` runs a production build, then `rsync -az --delete` of `_site/` to
-`root@77.42.34.208:/var/www/giraf/` over SSH (key auth — no password, no `.env`). The box serves that
-directory directly via `giraf-web.service` (`python3 -m http.server :8088`) behind a cloudflared
-tunnel, so synced files go **live immediately — no restart**. `--delete` only ever affects files
-inside `/var/www/giraf/`; nothing else on the (multi-purpose) server is touched. Override the target
-with `DEPLOY_HOST` / `DEPLOY_PATH` env vars.
+**Deploying is just pushing to `main`.** `.github/workflows/pages.yml` builds the site with
+`bundle exec jekyll build` (`JEKYLL_ENV=production`, Ruby 3.4) and publishes `_site/` to GitHub Pages
+on every push (or via the Actions tab → "Run workflow"). No SSH, no server to restart. `Gemfile.lock`
+is committed so CI resolves identical gem versions. Pages uses build type "GitHub Actions" on the
+public `aau-giraf/GIRAF-website` repo; the `CNAME` file carries the custom domain.

@@ -5,8 +5,8 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## What this is
 
 The **public-facing GIRAF website** — a Jekyll 4.3 static site (marketing / project info / news),
-repo `github.com/nbhansen/GIRAF-website`. Built locally and deployed over **SSH to a Hetzner box**;
-NOT on GitHub Pages.
+repo `github.com/aau-giraf/GIRAF-website`. Deployed to **GitHub Pages via GitHub Actions** — a push
+to `main` builds and publishes automatically (see *Deployment* below).
 
 **URLs (don't confuse these):**
 - **Canonical** = `https://giraf.cs.aau.dk` — set as `url` in `_config.yml`, the intended production
@@ -42,16 +42,20 @@ There are **no tests** and no lint step — it's a static content site.
 
 ### Deployment
 
-`./site.sh deploy` (→ `deploy.sh`) builds, then `rsync -az --delete _site/` over SSH to
-**`root@77.42.34.208:/var/www/giraf/`** (key auth; no password, no `.env`). Override with
-`DEPLOY_HOST` / `DEPLOY_PATH`.
+Deployed via **GitHub Pages + GitHub Actions**: `.github/workflows/pages.yml` runs on every push to
+`main` (and manual `workflow_dispatch`), builds with `bundle exec jekyll build` (`JEKYLL_ENV=production`,
+Ruby 3.4 — the same build as `./site.sh build`), and publishes `_site/` to Pages. **Deploying = pushing
+to `main`.** No SSH, no server to restart.
 
-- The server serves that dir via **`giraf-web.service`** (`python3 -m http.server :8088`,
-  `Restart=always`) behind a **cloudflared tunnel** → `giraf.nbhansen.dk`. No nginx/caddy. Synced
-  files are live immediately; nothing to restart.
-- **The box is multi-purpose** (other non-GIRAF services run on it). `--delete` is safe because it
-  only touches files *inside* `/var/www/giraf/` — never scope a deploy command wider than that path.
-- SSH login is **`root`** (not `ubuntu`). Investigate read-only; don't change unrelated services.
+- Pages is configured with **build type "GitHub Actions"** (not "deploy from a branch"). The repo is
+  **public** on the `aau-giraf` org (free plan → Pages is free). `Gemfile.lock` **is committed** so CI
+  resolves identical gem versions.
+- **Custom domain** = `giraf.cs.aau.dk` (see the `CNAME` file + `url` in `_config.yml`). It goes live
+  once AAU IT adds a DNS record `giraf.cs.aau.dk CNAME aau-giraf.github.io` and the domain is set in
+  Settings → Pages; until then the site serves at `https://aau-giraf.github.io/GIRAF-website/`.
+- **Legacy (retired):** the old path was `./site.sh deploy` → `deploy.sh` rsync over SSH to a Hetzner
+  box (`giraf.nbhansen.dk`, cloudflared tunnel). `deploy.sh` still exists but is no longer the deploy
+  mechanism — prefer a `main` push.
 - The site's own helper scripts (`deploy.sh`, `site.sh`, `new-post.sh`) and docs are listed under
   `exclude:` in `_config.yml` so they are NOT built into `_site/` or served publicly — keep new
   non-content files excluded.
@@ -96,4 +100,5 @@ Standard Jekyll, no collections. Content is plain pages plus blog posts:
   sync with the real apps; deep technical docs belong in the MkDocs wiki, not here.
 - Use `{{ '/path' | relative_url }}` for internal links/assets (the codebase does this consistently;
   `baseurl` is empty but keep the pattern).
-- This repo's remote is **`nbhansen/GIRAF-website`** (personal), not the `aau-giraf` org.
+- This repo lives under the **`aau-giraf`** org (`github.com/aau-giraf/GIRAF-website`), alongside the
+  rest of the GIRAF platform. (It was transferred from the maintainer's personal account in 2026.)

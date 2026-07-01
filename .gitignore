@@ -5,7 +5,7 @@ _site
 .jekyll-metadata
 
 # Ruby/Bundler
-Gemfile.lock
+# Gemfile.lock is committed for reproducible CI (GitHub Actions) builds
 vendor/
 .bundle/
 

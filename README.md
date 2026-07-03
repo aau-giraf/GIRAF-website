@@ -3,8 +3,9 @@
 The public GIRAF site — a Jekyll static site (project info, app overviews, news). Not the technical
 wiki (that's `aau-giraf/wiki`, MkDocs).
 
-- **URL:** `https://giraf.cs.aau.dk` (canonical, set in `_config.yml`). Live at
-  `https://aau-giraf.github.io/GIRAF-website/` until DNS is cut over.
+- **URL:** `https://giraf.cs.aau.dk` (canonical, set in `_config.yml`; custom domain via `CNAME`).
+  The site is served at the **root** of that domain, so `baseurl` must stay `""` — do not pass a
+  `--baseurl` override in the build (it prefixes every asset/link and 404s the CSS).
 
 ## Local development
 

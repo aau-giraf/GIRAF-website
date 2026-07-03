@@ -37,8 +37,12 @@ jobs:
         uses: actions/configure-pages@v5
 
       - name: Build with Jekyll
-        # Outputs to ./_site by default (Jekyll's default destination)
-        run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
+        # Outputs to ./_site by default (Jekyll's default destination).
+        # No --baseurl override: the site is served at the root of the custom
+        # domain (giraf.cs.aau.dk, via CNAME), so baseurl must stay "" as set in
+        # _config.yml. Passing configure-pages' base_path (/GIRAF-website) here
+        # would prefix every asset/link and 404 the CSS.
+        run: bundle exec jekyll build
         env:
           JEKYLL_ENV: production
 

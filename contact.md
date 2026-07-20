@@ -27,9 +27,9 @@ GIRAF is open source. Contributions and feedback are welcome.
 
 For research collaboration or academic inquiries about the GIRAF project:
 
-**Department of Computer Science**
-Aalborg University
-Selma Lagerloefs Vej 300
+**Department of Computer Science**\
+Aalborg University\
+Selma Lagerlöfs Vej 300\
 9220 Aalborg East, Denmark
 
 **Email:** [nbha@cs.aau.dk](mailto:nbha@cs.aau.dk)

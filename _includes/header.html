@@ -11,12 +11,12 @@
       {% endfor %}
     </nav>
 
-    <button class="mobile-menu-btn" onclick="document.querySelector('.mobile-dropdown').classList.toggle('open')">
+    <button class="mobile-menu-btn" type="button" aria-label="Menu" aria-expanded="false" aria-controls="mobile-dropdown" onclick="var d=document.querySelector('.mobile-dropdown').classList.toggle('open');this.setAttribute('aria-expanded',d)">
       <i class="fa fa-bars" aria-hidden="true"></i>
     </button>
   </div>
 
-  <div class="mobile-dropdown">
+  <div class="mobile-dropdown" id="mobile-dropdown">
     {% for item in site.data.settings.menu %}
       <a href="{{ item.url | relative_url }}" class="nav-link">{{ item.name }}</a>
     {% endfor %}

@@ -3,6 +3,7 @@ layout: post
 title: "Welcome Fall 2024 Students"
 date: 2024-09-01
 image: 'giraf-logo.png'
+excerpt: "Welcome to the new cohort of GIRAF developers! This semester we have interdisciplinary teams building better tools for children with autism."
 ---
 
 Welcome to the new cohort of GIRAF developers! This semester we have teams from:

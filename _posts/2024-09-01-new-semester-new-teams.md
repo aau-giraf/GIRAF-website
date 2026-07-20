@@ -14,4 +14,4 @@ Welcome to the new cohort of GIRAF developers! This semester we have teams from:
 
 This interdisciplinary collaboration will help us build better tools for children with autism.
 
-Check out the [Getting Started guide](https://aau-giraf.github.io/wiki/Getting_Started/) to begin.
+Check out the [onboarding guide](https://aau-giraf.github.io/wiki/Onboarding/) to begin.

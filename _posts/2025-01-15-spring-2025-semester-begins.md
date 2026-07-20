@@ -14,4 +14,4 @@ A new semester of GIRAF development is underway! This spring, student teams will
 
 ## Getting Involved
 
-New students can find onboarding resources in our [wiki](https://aau-giraf.github.io/wiki/Getting_Started/).
+New students can find onboarding resources in our [wiki](https://aau-giraf.github.io/wiki/Onboarding/).

@@ -45,12 +45,12 @@ Egebakken provides invaluable insight into how GIRAF applications work in practi
 - **Classroom observations** - Development teams visit to see how children interact with technology
 - **Staff interviews** - Teachers share what works, what doesn't, and what they need
 - **Usability testing** - Real feedback from the people who use these tools daily
-- **Ongoing collaboration** - Each semester, new student teams continue the partnership
+- **Ongoing collaboration** - Each fall semester, new student teams continue the partnership
 
 This close relationship ensures GIRAF remains grounded in reality rather than theory.
 
 **Other partners:**
-- [Center for Autism and ADHD](https://handicaptilbuddene.aalborg.dk/fagcentre/fagcenter-for-autisme-og-adhd) - Aalborg Municipality
+- Center for Autism and ADHD - Aalborg Municipality
 
 ---
 
@@ -58,7 +58,7 @@ This close relationship ensures GIRAF remains grounded in reality rather than th
 
 GIRAF is developed by students at the **Department of Computer Science, Aalborg University** as part of their software engineering education.
 
-The project has been running continuously since **Spring 2011**, with new student teams contributing each semester. Teams include students from:
+The project has been running continuously since **Spring 2011**, with new student teams contributing each fall semester. Teams include students from:
 
 - **Software Engineering**
 - **Information Technology (BaIT)**

@@ -24,7 +24,7 @@ can see what is happening, in what order, and when, ticking off each activity as
 ## Foodplanner
 
 <a href="{{ '/apps/foodplanner/' | relative_url }}">
-  <img src="{{ '/assets/screenshots/foodplanner/04-madpakke.png' | relative_url }}" alt="A child's lunch plan with a real food image">
+  <img src="{{ '/assets/screenshots/foodplanner/06-madpakke-ingredients.jpg' | relative_url }}" alt="A lunch plan showing a real food photo and its list of ingredients">
 </a>
 
 A meal-planning app for children with selective eating habits. Parents and teachers build visual

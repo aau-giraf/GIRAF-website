@@ -3,9 +3,6 @@ disqus:
   comments: false
   disqus_shortname: 'millennial-3'
 
-# If you are not using Google Analytics, please change 'google-ID' to an empty string
-google-ID: ''
-
 menu:
 - {name: 'About GIRAF',   url: '/about/'}
 - {name: 'Our Apps',      url: '/apps/'}

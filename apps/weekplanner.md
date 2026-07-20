@@ -28,7 +28,7 @@ citizens and pictograms shared through the central **giraf-core** service. Origi
 </figure>
 
 <figure>
-  <img src="{{ '/assets/screenshots/weekplanner/05-add-activity.png' | relative_url }}" alt="Add-activity form with pictogram search, upload and AI generation">
+  <img src="{{ '/assets/screenshots/weekplanner/05-add-activity.jpg' | relative_url }}" alt="Add-activity form with pictogram search, upload and AI generation">
   <figcaption><em>Adding an activity: search the pictogram library, upload an image, or generate one with AI.</em></figcaption>
 </figure>
 

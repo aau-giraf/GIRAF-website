@@ -18,7 +18,7 @@ The flagship application was **Weekplanner**, a visual weekly scheduling tool th
 
 Key partnerships during this period:
 - [Egebakken Specialskole](https://egebakken.aula.dk/)
-- [Center for Autism and ADHD](https://handicaptilbuddene.aalborg.dk/fagcentre/fagcenter-for-autisme-og-adhd), Aalborg Municipality
+- Center for Autism and ADHD, Aalborg Municipality
 
 ### 2019 - Flutter Transition
 
@@ -40,4 +40,4 @@ This model ensures continuous development while giving students real-world exper
 
 ## Looking Forward
 
-GIRAF continues to evolve each semester. New student teams build on over a decade of development work, contributing features, research, and improvements that directly benefit children with autism across Denmark.
+GIRAF continues to evolve each fall semester. New student teams build on over a decade of development work, contributing features, research, and improvements that directly benefit children with autism across Denmark.

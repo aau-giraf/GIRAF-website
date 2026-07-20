@@ -6,13 +6,13 @@ permalink: /students/
 
 ## Join the GIRAF Project
 
-GIRAF is a semester project for students at Aalborg University. Each semester, student teams contribute new features, improvements, and research to our applications.
+GIRAF is a fall-semester project for students at Aalborg University. Each fall semester, student teams contribute new features, improvements, and research to our applications.
 
 ## Getting Started
 
 Ready to contribute? Head to our developer wiki:
 
-**[GIRAF Wiki - Getting Started](https://aau-giraf.github.io/wiki/Getting_Started/)**
+**[GIRAF Wiki – Onboarding](https://aau-giraf.github.io/wiki/Onboarding/)**
 
 The wiki contains:
 - Development environment setup guides
@@ -54,4 +54,4 @@ Key repositories:
 
 ## Questions?
 
-Check the [wiki](https://aau-giraf.github.io/wiki/) first, or contact the project supervisor.
+Check the [wiki](https://aau-giraf.github.io/wiki/) first, or contact the project supervisor, Nicolai Brodersen Hansen ([nbha@cs.aau.dk](mailto:nbha@cs.aau.dk)).

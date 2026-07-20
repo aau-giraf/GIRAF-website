@@ -8,7 +8,7 @@ permalink: /contact/
 
 ### For Students
 
-If you're an AAU student who wants to work on GIRAF, start on the [For Students]({{ '/students/' | relative_url }}) page, then contact your course coordinator about joining a project group.
+If you're an AAU student who wants to work on GIRAF, start on the [For Students]({{ '/students/' | relative_url }}) page, then contact the project supervisor, Nicolai Brodersen Hansen ([nbha@cs.aau.dk](mailto:nbha@cs.aau.dk)), about joining a project group.
 
 ### For Institutions
 

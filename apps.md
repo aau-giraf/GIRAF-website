@@ -38,7 +38,7 @@ exactly what to expect at mealtimes.
 ## Visual Tangible Artefacts (VTA)
 
 <a href="{{ '/apps/vta/' | relative_url }}">
-  <img src="{{ '/assets/screenshots/vta/04-artefact-library.png' | relative_url }}" alt="A library of visual communication artefacts">
+  <img src="{{ '/assets/screenshots/vta/03-board.png' | relative_url }}" alt="An artefact placed on a VTA communication board">
 </a>
 
 A digital communication tool built around **boards** of visual artefacts (image + label + sound).

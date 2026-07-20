@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "Spring 2025 Semester Begins"
-date: 2025-01-15
+title: "Fall 2025 Semester Begins"
+date: 2025-09-01
 image: 'giraf-logo.png'
 ---
 
-A new semester of GIRAF development is underway! This spring, student teams will continue work on Foodplanner and Visual Tangible Artefacts (VTA).
+A new semester of GIRAF development is underway! This fall, student teams will continue work on Foodplanner and Visual Tangible Artefacts (VTA).
 
 ## Focus Areas
 

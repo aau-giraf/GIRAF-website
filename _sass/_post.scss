@@ -8,7 +8,7 @@
 .post-date {
   display: block;
   margin-bottom: 1rem;
-  color: #9a9a9a;
+  color: $text-muted;
   font-size:0.8rem;
 }
 .featured-image img {
@@ -151,7 +151,7 @@
       text-decoration: none;
 
       &:hover {
-        color: $amber-dark;
+        color: $amber-ink;
       }
     }
   }
@@ -182,7 +182,7 @@
     display: inline-block;
     margin-top: 0.5rem;
     padding: 0.6rem 1.2rem;
-    background: #d4a373;
+    background: $primary-color;
     color: white;
     text-decoration: none;
     border-radius: 6px;
@@ -190,7 +190,7 @@
     transition: background 0.2s ease;
 
     &:hover {
-      background: #c4935f;
+      background: $primary-dark;
     }
   }
 }

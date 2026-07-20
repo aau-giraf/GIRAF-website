@@ -17,11 +17,13 @@ $ink:          #1F1B16; // warm near-black text
 $ink-soft:     #5C564C; // muted text
 $line:         #DAD6CC; // hairline / structure
 
-$amber:        #F6A02C; // brand / "now" highlight (keeps giraffe equity)
-$amber-dark:   #D9831A; // hover
+$amber:        #F6A02C; // brand fill / on-dark / decorative (keeps giraffe equity)
+$amber-dark:   #D9831A; // legacy amber hover (decorative)
 $amber-tint:   #FCEBD0; // soft amber wash
+$amber-ink:      #9A641C; // amber as TEXT/UI on light backgrounds — WCAG AA (>=4.5:1 on paper)
+$amber-ink-dark: #8C5B19; // hover for amber-ink surfaces
 
-$cat-time:     #3B82C4; // weekplanner / schedule
+$cat-time:     #3473AE; // weekplanner / schedule + focus outline + post-date (AA on paper)
 $cat-voice:    #E5645A; // VTA / communication
 $cat-food:     #4FA66A; // foodplanner / nourishment
 $done:         #22A85A; // completion tick (echoes the real app green)
@@ -45,8 +47,8 @@ $heading-font-family: $font-display;
 $code-font-family:    $font-code;
 
 $brand-color:   $ink;
-$primary-color: $amber;
-$primary-dark:  $amber-dark;
+$primary-color: $amber-ink;
+$primary-dark:  $amber-ink-dark;
 $bg-cream:      $paper;
 $bg-cream-dark: $paper-raised;
 $text-dark:     $ink;

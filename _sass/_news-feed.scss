@@ -1,3 +1,5 @@
+@use "tokens" as *;
+
 .home-container {
   display: flex;
 }
@@ -48,5 +50,5 @@
 .news-feed-list .post-date {
   display: block;
   font-size: 0.8em;
-  color: #999;
+  color: $text-muted;
 }

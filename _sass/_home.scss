@@ -28,7 +28,7 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.14em;
-  color: $amber-dark;
+  color: $amber-ink;
   margin: 0 0 $s-2;
 }
 .eyebrow--light { color: $amber; }
@@ -183,11 +183,11 @@
   h3 { margin: 8px 0 6px; font-size: 1.1rem; }
   p  { margin: 0; color: $ink-soft; font-size: 0.92rem; line-height: 1.5; }
 }
-.principle__no {
+.principle__no { // amber-ink: AA on the light principles band
   font-family: $font-display;
   font-weight: 700;
   font-size: 1rem;
-  color: $amber-dark;
+  color: $amber-ink;
   letter-spacing: 0.05em;
 }
 

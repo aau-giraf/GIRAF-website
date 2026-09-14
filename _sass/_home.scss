@@ -204,6 +204,8 @@
   margin: 0;
 
   strong { color: #fff; }
+  a { color: #fff; text-decoration: underline; }
+  + .impact__partner { margin-top: $s-3; }
 }
 
 /* --- principles ---------------------------------------------- */

@@ -1,16 +1,12 @@
 ---
 layout: post
-title: "Fall 2024 Handover Complete"
+title: "Fall 2024 semester complete"
 date: 2024-12-20
 image: 'giraf-logo.png'
 ---
 
-The Fall 2024 semester has concluded with successful handovers from all project groups.
+The Fall 2024 semester is over. This fall the three current apps started in new repositories:
 
-## Highlights
-
-- **Foodplanner** teams delivered major UI improvements and backend stability fixes
-- **VTA** teams established the foundational architecture and AI integration
-- Documentation updated across all repositories
-
-Thank you to all the students who contributed this semester!
+- **Weekplanner** as a Flutter app with a .NET backend
+- **VTA** with communication boards, live sharing and AI image generation
+- **Foodplanner** with visual meal plans and a .NET backend

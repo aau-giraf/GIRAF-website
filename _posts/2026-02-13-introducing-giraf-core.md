@@ -1,17 +1,17 @@
 ---
 layout: post
-title: "Introducing GIRAF Core — A Shared Backend for the Platform"
-date: 2025-02-13
+title: "Introducing giraf-core, a shared backend for the platform"
+date: 2026-02-13
 image: 'giraf-logo.png'
 ---
 
-GIRAF has grown from a single app into a platform with multiple applications — Weekplanner, Food Planner, and Visual Tangible Artefacts (VTA). Each app has its own backend, its own database, and its own deployment. But they all share the same fundamental concepts: users, organizations, citizens, pictograms.
+GIRAF is three apps: Weekplanner, Foodplanner and Visual Tangible Artefacts (VTA). Each has its own backend, database and deployment. They share the same concepts: users, organisations, citizens, pictograms.
 
-Until now, each backend managed these shared concepts independently. That means duplicated user tables, duplicated auth logic, and no single place where "Alice is an admin at Egebakken" lives as a fact. If a new app joins the platform, it has to reimplement all of that from scratch.
+Until now each backend managed those on its own. That means duplicated user tables, duplicated login code, and no single place where "Alice is an admin at Egebakken" lives as a fact.
 
-**GIRAF Core** fixes this. It's a single shared service that owns the common domain data and authentication for the entire platform.
+**giraf-core** is a shared service that owns that common data and the login for the platform. Weekplanner is the first app to use it; VTA and Foodplanner still run their own users and will move later.
 
-## How It Works
+## How it works
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
@@ -21,11 +21,11 @@ Until now, each backend managed these shared concepts independently. That means 
        │ domain data          │ domain data       │ domain data
        ▼                      ▼                   ▼
 ┌──────────────┐   ┌──────────────┐   ┌──────────────┐
-│ Weekplanner  │   │ Food Planner │   │ VTA Backend  │
+│ Weekplanner  │   │ Foodplanner  │   │ VTA Backend  │
 │ Backend      │   │ Backend      │   │              │
-│ (.NET / C#)  │   │ (TBD)        │   │ (TBD)        │
-│ Activities,  │   │ Meals, Menus │   │ Exercises,   │
-│ Schedules    │   │ Nutrition    │   │ Progress     │
+│ (.NET 10)    │   │ (.NET 8)     │   │ (.NET 8)     │
+│ Activities   │   │ Meal plans,  │   │ Artefacts,   │
+│              │   │ ingredients  │   │ boards       │
 └──────┬───────┘   └──────┬───────┘   └──────┬───────┘
        │                  │                   │
        │  users, orgs, citizens, pictograms   │
@@ -43,16 +43,14 @@ Until now, each backend managed these shared concepts independently. That means 
                     └───────────┘
 ```
 
-The idea is straightforward:
-
 - **Apps authenticate with Core.** A mobile app calls Core's `/token/pair` endpoint and gets back a JWT.
 - **JWTs carry org roles.** The token payload includes something like `{"1": "owner", "5": "member"}`, so any app backend can check permissions locally without calling Core again.
-- **Each app backend only stores its own domain data.** Weekplanner stores schedules and activities. VTA stores exercises and progress. Neither needs to know about users or orgs — that's Core's job.
+- **Each app backend only stores its own domain data.** Weekplanner stores activities. VTA stores artefacts and boards. Foodplanner stores meal plans. None of them needs its own copy of users or organisations.
 - **Core is the single source of truth.** One user account, one organization, one citizen record. Shared across every app on the platform.
 
-## What It Manages
+## What it manages
 
-Core handles seven areas that every GIRAF app needs:
+Core handles seven areas:
 
 - **Users** — registration, profiles, authentication
 - **Organizations** — the institutions (schools, care facilities) using GIRAF
@@ -62,14 +60,14 @@ Core handles seven areas that every GIRAF app needs:
 - **Pictograms** — the visual symbols used across the platform, both global and org-specific
 - **Invitations** — letting admins invite new users to their organization
 
-## Tech Stack
+## Tech stack
 
 We went with Django + Django Ninja for the API layer and PostgreSQL for the database. The codebase follows a consistent pattern across every feature: `models.py` → `schemas.py` → `services.py` → `api.py`. Business logic lives in the service layer, never directly in API endpoints.
 
 Tests run against SQLite in-memory for speed, and the whole thing can be spun up with a single `docker compose up`.
 
-## What's Next
+## What's next
 
-The Weekplanner backend already has its own user and org tables. The migration path is to gradually point it at Core instead. New features and new apps should build against Core from the start, rather than reinventing shared domain concepts yet again.
+Weekplanner is being moved onto Core now. VTA and Foodplanner have their own user tables and will follow. New features should build against Core rather than add another copy of users and organisations.
 
-If you're working on GIRAF this semester and want to poke around, the interactive API docs are at `http://localhost:8000/api/v1/docs` once you have the service running.
+The interactive API docs are at `http://localhost:8000/api/v1/docs` once the service is running.

@@ -1,17 +1,11 @@
 ---
 layout: post
-title: "Welcome Fall 2024 Students"
+title: "Fall 2024 semester begins"
 date: 2024-09-01
 image: 'giraf-logo.png'
-excerpt: "Welcome to the new cohort of GIRAF developers! This semester we have interdisciplinary teams building better tools for children with autism."
+excerpt: "Fall 2024 students from Interaction Design, Software Development and Information Technology start on GIRAF."
 ---
 
-Welcome to the new cohort of GIRAF developers! This semester we have teams from:
+The Fall 2024 semester has started. 5th semester students from Interaction Design, Software Development and Information Technology work on GIRAF this fall.
 
-- Software Engineering (5th semester)
-- Information Technology
-- Interaction Design
-
-This interdisciplinary collaboration will help us build better tools for children with autism.
-
-Check out the [onboarding guide](https://aau-giraf.github.io/wiki/Onboarding/) to begin.
+Code and setup instructions are at [github.com/aau-giraf](https://github.com/aau-giraf).

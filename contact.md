@@ -12,7 +12,7 @@ If you're an AAU student who wants to work on GIRAF, start on the [For Students]
 
 ### For Institutions
 
-If you're a care institution or school interested in using or learning more about GIRAF applications:
+If you're a school or care institution and want to try the apps or hear more:
 
 **Email:** [nbha@cs.aau.dk](mailto:nbha@cs.aau.dk)
 
@@ -21,7 +21,6 @@ If you're a care institution or school interested in using or learning more abou
 GIRAF is open source. Contributions and feedback are welcome.
 
 - **GitHub:** [github.com/aau-giraf](https://github.com/aau-giraf)
-- **Documentation:** [aau-giraf.github.io/wiki](https://aau-giraf.github.io/wiki/)
 
 ### Academic Inquiries
 

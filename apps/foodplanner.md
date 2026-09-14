@@ -12,13 +12,25 @@ meal plans ("madpakker") that show children exactly what to expect at mealtimes,
 food images in the spirit of the Picture Exchange Communication System (PECS).
 
 Teachers browse their classes and pupils, parents view and edit their child's lunch plan day by day,
-and a built-in feedback chat connects home and school.
+and a built-in feedback chat connects home and school. A lunchbox contains foods, and a food contains
+ingredients, so a child can see all the way down to what is in the sandwich. Foodplanner runs its own
+backend; it is not yet on giraf-core.
 
 ## Screenshots
 
 <figure>
+  <img src="{{ '/assets/screenshots/foodplanner/07-madpakke-sandwich.jpg' | relative_url }}" alt="A Foodplanner lunchbox: a photo of a ham-and-bacon sandwich, its name, and the start of its ingredient list">
+  <figcaption><em>A lunchbox ("madpakke") with a photo of the real food.</em></figcaption>
+</figure>
+
+<figure>
+  <img src="{{ '/assets/screenshots/foodplanner/06-madpakke-ingredients.jpg' | relative_url }}" alt="A Foodplanner lunchbox screen: a photo of a ham-and-bacon sandwich, its name, and an ingredient list below: ham, bread, bacon and tomato, each with its own picture">
+  <figcaption><em>The sandwich broken down into ham, bread, bacon and tomato, each with its own picture.</em></figcaption>
+</figure>
+
+<figure>
   <img src="{{ '/assets/screenshots/foodplanner/04-madpakke.png' | relative_url }}" alt="A parent's view of a child's lunch plan with a food image">
-  <figcaption><em>A parent's daily lunch plan ("madpakke") with a realistic food image.</em></figcaption>
+  <figcaption><em>A parent's daily lunch plan.</em></figcaption>
 </figure>
 
 <figure>

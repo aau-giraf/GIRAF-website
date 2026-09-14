@@ -4,27 +4,27 @@ title: Our Applications
 permalink: /apps/
 ---
 
-The GIRAF platform is a family of apps that support autistic children with little or no verbal
-communication, at school, at home and in between. Each app focuses on one part of the day and
-shares a common foundation for users, organisations and visual symbols.
+GIRAF is three apps for autistic children with little or no verbal speech. Each covers one part of
+the day. Weekplanner runs on the shared giraf-core service for users, organisations and pictograms;
+VTA and Foodplanner still run their own backends.
 
 ## Weekplanner
 
 <a href="{{ '/apps/weekplanner/' | relative_url }}">
-  <img src="{{ '/assets/screenshots/weekplanner/03-weekplan.png' | relative_url }}" alt="A child's day shown as pictogram activity cards">
+  <img src="{{ '/assets/screenshots/weekplanner/02-day-cards.jpg' | relative_url }}" alt="Four pictogram activity cards in a row: lunch, the zoo, a bus ride and home, each with a tick circle to mark it done">
 </a>
 
 A visual weekly schedule. Caregivers build a child's day and week from **pictograms**, so the child
 can see what is happening, in what order, and when, ticking off each activity as the day goes.
 
-**Technology:** Flutter (iOS/Android/Web) + ASP.NET API + PostgreSQL
+**Technology:** Flutter (iOS/Android/Web) + ASP.NET API + PostgreSQL, users and pictograms via giraf-core
 
 [View screenshots & details →]({{ '/apps/weekplanner/' | relative_url }})
 
 ## Foodplanner
 
 <a href="{{ '/apps/foodplanner/' | relative_url }}">
-  <img src="{{ '/assets/screenshots/foodplanner/06-madpakke-ingredients.jpg' | relative_url }}" alt="A lunch plan showing a real food photo and its list of ingredients">
+  <img src="{{ '/assets/screenshots/foodplanner/07-madpakke-sandwich.jpg' | relative_url }}" alt="A Foodplanner lunchbox: a photo of a ham-and-bacon sandwich, its name, and the start of its ingredient list">
 </a>
 
 A meal-planning app for children with selective eating habits. Parents and teachers build visual
@@ -49,6 +49,4 @@ text-to-speech.
 
 [View screenshots & details →]({{ '/apps/vta/' | relative_url }})
 
-All GIRAF code is open source at [github.com/aau-giraf](https://github.com/aau-giraf), including
-earlier and experimental work from past semesters. For technical documentation and setup guides,
-see our [developer wiki](https://aau-giraf.github.io/wiki/).
+All GIRAF code is open source at [github.com/aau-giraf](https://github.com/aau-giraf).

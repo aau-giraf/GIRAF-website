@@ -1,17 +1,13 @@
 ---
 layout: post
-title: "Fall 2025 Semester Begins"
+title: "Fall 2025 semester begins"
 date: 2025-09-01
 image: 'giraf-logo.png'
 ---
 
-A new semester of GIRAF development is underway! This fall, student teams will continue work on Foodplanner and Visual Tangible Artefacts (VTA).
+The Fall 2025 semester has started. This fall the student teams work on Foodplanner and Visual Tangible Artefacts (VTA).
 
-## Focus Areas
+- **Foodplanner**: the meal-planning flow, based on feedback from Egebakken
+- **VTA**: remote sessions and boards
 
-- **Foodplanner**: Improving the meal planning interface and adding new features based on feedback from Egebakken
-- **VTA**: Expanding AI image generation capabilities and refining the physical-digital interaction model
-
-## Getting Involved
-
-New students can find onboarding resources in our [wiki](https://aau-giraf.github.io/wiki/Onboarding/).
+Code and setup instructions are at [github.com/aau-giraf](https://github.com/aau-giraf).

@@ -6,7 +6,7 @@ permalink: /students/
 
 ## Join the GIRAF project
 
-5th semester students from Interaction Design, Software Development and Information Technology work on GIRAF every fall.
+Each fall, 5th semester students from Interaction Design, Software Development and Information Technology join GIRAF.
 
 ## What you work on
 

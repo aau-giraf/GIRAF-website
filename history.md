@@ -22,4 +22,4 @@ Two shared services were added: **giraf-core** for users, organisations, citizen
 
 ## How the project runs
 
-5th semester students from Interaction Design, Software Development and Information Technology work on GIRAF every fall. The teaching model is described in a peer-reviewed paper, [Designing Sustainable Interdisciplinary PBL in Engineering Education (IRSPBL 2025)](https://journals.aau.dk/index.php/IRSPBL/article/view/11042).
+Each fall, 5th semester students from Interaction Design, Software Development and Information Technology join GIRAF. The teaching model is described in a peer-reviewed paper, [Designing Sustainable Interdisciplinary PBL in Engineering Education (IRSPBL 2025)](https://journals.aau.dk/index.php/IRSPBL/article/view/11042).

@@ -40,7 +40,7 @@ That testing changes the software. For many autistic children "lunch" does not m
 
 ## Academic home
 
-GIRAF is a project at the **Department of Computer Science, Aalborg University**. 5th semester students from Interaction Design, Software Development and Information Technology work on it every fall.
+GIRAF is a system project at the **Department of Computer Science, Aalborg University**. Each fall, 5th semester students from Interaction Design, Software Development and Information Technology join the project.
 
 ---
 

@@ -14,6 +14,7 @@ VTA is designed for shared use between a child and a caregiver: a board can be *
 that changes appear on both screens at once, and the app includes built-in **video calling** and
 **text-to-speech** so an artefact can speak its label aloud. A separate web dashboard lets
 administrators manage users and the pairings that link caregivers to the children they support.
+VTA runs its own backend; it is not yet on giraf-core.
 
 ## Screenshots
 

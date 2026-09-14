@@ -5,111 +5,74 @@ permalink: /about/
 ---
 
 <div class="hero-section">
-  <img src="{{ '/assets/img/giraf-hero.png' | relative_url }}" alt="GIRAF - Supporting autistic children through visual tools" class="hero-image">
+  <img src="{{ '/assets/img/giraf-hero.png' | relative_url }}" alt="GIRAF logo" class="hero-image">
 </div>
 
 ## What is GIRAF?
 
-**GIRAF** (Graphical Interface Resource for Autistic Folks) is a set of tablet apps for autistic children, particularly those with minimal or no verbal communication. Since 2011, student teams at Aalborg University have built them in partnership with Danish special-education institutions.
+**GIRAF** (Graphical Interface Resource for Autistic Folks) is a set of tablet apps for autistic children with little or no verbal speech. Since 2011, students at Aalborg University have built them with a Danish special-needs school.
 
 ---
 
 ## The applications
 
-GIRAF is three apps over a shared backend: **Weekplanner** (visual schedules), **VTA** (communication boards) and **Foodplanner** (visual meal plans). Each one is described in detail, with screenshots and its current state, on the [applications page]({{ '/apps/' | relative_url }}).
+GIRAF is three apps: **Weekplanner** (visual schedules), **VTA** (communication boards) and **Foodplanner** (visual meal plans). Weekplanner runs on a shared service, giraf-core, for users, organisations and pictograms. VTA and Foodplanner still run their own backends. Each app is described, with screenshots, on the [applications page]({{ '/apps/' | relative_url }}).
 
 ---
 
-## Who Uses GIRAF?
+## Who is it for?
 
-### Primary Users
-- **Children with autism** (ages 5-17)
-- **Children with minimal or no verbal communication**
-- **Children with varying support needs** - from minimal to significant assistance
+Children with autism who communicate better with pictures than with words. Many have little or no verbal speech.
 
-### Secondary Users
-- **Teachers and caregivers** who create and manage schedules and content
-- **Parents** who want consistency between home and school
-- **Institutions** serving children with special needs
+Teachers and caregivers build the schedules, boards and meal plans. Parents can follow along so that home and school match.
 
 ---
 
-## Our Partnership with Egebakken
+## Egebakken Specialskole
 
 <div class="partner-highlight">
-  <p><strong>Egebakken Specialskole</strong> in Vodskov, Aalborg Municipality, has been GIRAF's primary partner institution since the project began. This specialized school serves students with autism up to age 17, with eight different class levels accommodating varying support needs.</p>
+  <p><strong>Egebakken Specialskole</strong> in Vodskov, Aalborg Municipality, is GIRAF's partner school. The apps are tested there with a few children and teachers at a time, in the settings where they would be used.</p>
 </div>
 
-Egebakken provides invaluable insight into how GIRAF applications work in practice:
-
-- **Classroom observations** - Development teams visit to see how children interact with technology
-- **Staff interviews** - Teachers share what works, what doesn't, and what they need
-- **Usability testing** - Real feedback from the people who use these tools daily
-- **Ongoing collaboration** - Each fall semester, new student teams continue the partnership
-
-This close relationship ensures GIRAF remains grounded in reality rather than theory.
-
-**Other partners:**
-- Center for Autism and ADHD - Aalborg Municipality
+That testing changes the software. For many autistic children "lunch" does not mean roughly a cheese sandwich; it means exactly this bread, this cheese, these cucumbers. Interviews at Egebakken surfaced that, so Foodplanner got ingredients as a first-class concept: a lunchbox contains foods, and a food contains ingredients, and a child can see all the way down to what is in the sandwich.
 
 ---
 
-## Academic Home
+## Academic home
 
-GIRAF is developed by students at the **Department of Computer Science, Aalborg University** as part of their software engineering education.
-
-The project has been running continuously since **Spring 2011**, with new student teams contributing each fall semester. Teams include students from:
-
-- **Software Engineering**
-- **Information Technology (BaIT)**
-- **Interaction Design**
-
-This interdisciplinary approach combines technical implementation with user-centered design principles.
-
-### What Students Gain
-
-- Real-world experience with assistive technology
-- Direct collaboration with end users and stakeholders
-- Multi-team coordination using Scrum methodology
-- Contributing to a meaningful, long-running project
-- Hands-on experience with Flutter, .NET, and modern development practices
+GIRAF is a project at the **Department of Computer Science, Aalborg University**. It started in 2011. 5th semester students from Interaction Design, Software Development and Information Technology work on it every fall.
 
 ---
 
-## Design Principles
+## Design principles
 
-Many individuals with autism process visual information more easily than verbal information. GIRAF applications leverage this through evidence-based design principles:
+Many autistic children process pictures more easily than words. The apps follow five principles, drawn from TEACCH and PECS:
 
-| Principle | Why It Matters |
+| Principle | Why it matters |
 |-----------|----------------|
-| **Predictability** | Knowing what comes next reduces anxiety - children can mentally prepare for transitions |
-| **Visual Clarity** | Pictures communicate without requiring social interaction, lowering stress |
-| **Simplicity** | Uncluttered interfaces with one action per screen minimize cognitive overload |
-| **Consistency** | Digital tools that behave the same way every time provide reliable structure |
-| **Independence** | Visual schedules let children follow routines without constant verbal reminders |
-
-These principles are grounded in TEACCH methodology, Applied Behavior Analysis research, and direct feedback from educators at Egebakken.
+| **Predictability** | Knowing what comes next reduces anxiety. The child can prepare for transitions. |
+| **Visual clarity** | Pictures communicate without requiring social interaction. |
+| **Simplicity** | Uncluttered screens with one action at a time. |
+| **Consistency** | The same action looks and works the same way everywhere. |
+| **Independence** | A visual schedule lets a child follow a routine without constant verbal reminders. |
 
 ---
 
-## Open Source
+## Open source
 
-All GIRAF applications are open source and available on [GitHub](https://github.com/aau-giraf).
+All GIRAF code is open source at [github.com/aau-giraf](https://github.com/aau-giraf):
 
-Current repositories:
-- [weekplanner](https://github.com/aau-giraf/weekplanner) - Weekplanner app and backend
-- [visual-tangible-artefacts](https://github.com/aau-giraf/visual-tangible-artefacts) - VTA app and API
-- [foodplanner](https://github.com/aau-giraf/foodplanner) - Foodplanner app
-- [foodplanner-api](https://github.com/aau-giraf/foodplanner-api) - Foodplanner backend
-- [giraf-core](https://github.com/aau-giraf/giraf-core) - Shared backend: users, orgs, citizens, pictograms
-- [wiki](https://github.com/aau-giraf/wiki) - Documentation
+- [weekplanner](https://github.com/aau-giraf/weekplanner): Weekplanner app and backend
+- [visual-tangible-artefacts](https://github.com/aau-giraf/visual-tangible-artefacts): VTA app, API and admin dashboard
+- [foodplanner](https://github.com/aau-giraf/foodplanner) and [foodplanner-api](https://github.com/aau-giraf/foodplanner-api): Foodplanner app and backend
+- [giraf-core](https://github.com/aau-giraf/giraf-core): shared service for users, organisations, citizens and pictograms
+- [giraf-ai](https://github.com/aau-giraf/giraf-ai): pictogram generation and text-to-speech
+- [giraf-deploy](https://github.com/aau-giraf/giraf-deploy): Docker Compose for the full stack
 
 ---
 
-## Get Involved
+## Get involved
 
-GIRAF welcomes contributions from students, researchers, and developers interested in assistive technology.
-
-- **Students at AAU**: Contact the Department of Computer Science about joining a GIRAF project team
-- **Developers**: Check our [GitHub repositories](https://github.com/aau-giraf) for open issues
-- **Institutions**: Reach out if you're interested in piloting GIRAF applications
+- **Students at AAU**: see [For Students]({{ '/students/' | relative_url }})
+- **Developers**: open issues are on [GitHub](https://github.com/aau-giraf)
+- **Institutions**: [contact us]({{ '/contact/' | relative_url }}) if you want to try the apps

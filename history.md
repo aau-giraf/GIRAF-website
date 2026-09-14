@@ -4,40 +4,22 @@ title: History
 permalink: /history/
 ---
 
-## Project Timeline
+## 2011
 
-### 2011 - Project Founded
+GIRAF began as a semester project at Aalborg University's Department of Computer Science, with Egebakken Specialskole as partner. The first goal was a digital version of the physical schedule boards used in autism care.
 
-GIRAF began as a semester project at Aalborg University's Department of Computer Science. The initial focus was creating digital tools to replace physical schedule boards used in autism care facilities.
+## Fall 2024
 
-The project was established in collaboration with local institutions including Egebakken Specialskole, a school specializing in education for children with autism.
+The three current apps started in new repositories: **Weekplanner** (visual schedules) as a Flutter and .NET app, **Visual Tangible Artefacts (VTA)** (communication boards, with AI-generated images) and **Foodplanner** (visual meal plans built on the Picture Exchange Communication System, PECS).
 
-### 2011-2019 - Weekplanner Era
+## Fall 2025
 
-The flagship application was **Weekplanner**, a visual weekly scheduling tool that helped children understand and anticipate their daily activities. Development continued across many semesters with contributions from hundreds of students.
+Work continued on VTA and Foodplanner. VTA got video calls, live-shared boards and multiple boards per child. Foodplanner got search, ingredient images and a parent login.
 
-Key partnerships during this period:
-- [Egebakken Specialskole](https://egebakken.aula.dk/)
-- Center for Autism and ADHD, Aalborg Municipality
+## Spring 2026
 
-### 2019 - Flutter Transition
+Two shared services were added: **giraf-core** for users, organisations, citizens and pictograms, and **giraf-ai** for pictogram generation and text-to-speech. Weekplanner was moved onto giraf-core and got choice activities and a landscape iPad layout. VTA and Foodplanner still run their own backends.
 
-The project transitioned to the Flutter framework to improve cross-platform functionality and modernize the codebase for future development.
+## How the project runs
 
-### 2024 - New Directions
-
-The project expanded with two new application branches:
-
-**Foodplanner** - Addressing selective eating, which is common among autistic children. The application helps caregivers plan structured meals using visual representations, based on principles from the Picture Exchange Communication System (PECS).
-
-**Visual Tangible Artefacts (VTA)** - A digital communication tool. Children express themselves through boards of visual artefacts (an image, a label and a sound), shared live with a caregiver, with text-to-speech and built-in video calling. Includes AI-generated images for personalised artefacts.
-
-### Multi-Project Model
-
-Since 2011, GIRAF has operated as a multi-project involving 16-60 students per semester. Originally exclusive to software engineering students, the project now includes students from Information Technology and Interaction Design programs.
-
-This model ensures continuous development while giving students real-world experience working on assistive technology with actual end users.
-
-## Looking Forward
-
-GIRAF continues to evolve each fall semester. New student teams build on over a decade of development work, contributing features, research, and improvements that directly benefit children with autism across Denmark.
+5th semester students from Interaction Design, Software Development and Information Technology work on GIRAF every fall. The teaching model is described in a peer-reviewed paper, [Designing Sustainable Interdisciplinary PBL in Engineering Education (IRSPBL 2025)](https://journals.aau.dk/index.php/IRSPBL/article/view/11042).

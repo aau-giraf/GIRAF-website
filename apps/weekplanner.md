@@ -11,15 +11,19 @@ The visual weekly schedule at the heart of GIRAF. Caregivers build a child's day
 carry a start and end time, a title, a pictogram, and a completion toggle the child ticks off as the
 day progresses. "Choice activities" let a child pick between options when a task allows it.
 
-Schedules are managed per individual child or per class, across multiple organisations, with users,
-citizens and pictograms shared through the central **giraf-core** service. Originally developed from
-2011, Weekplanner has been rebuilt as a modern Flutter and .NET application.
+Schedules are managed per child or per class, across organisations. Users, citizens and pictograms
+come from the shared **giraf-core** service; pictograms can also be generated through giraf-ai.
 
 ## Screenshots
 
 <figure>
+  <img src="{{ '/assets/screenshots/weekplanner/02-day-cards.jpg' | relative_url }}" alt="Four pictogram activity cards in a row: lunch, the zoo, a bus ride and home, each with a picture and a tick circle to mark it done">
+  <figcaption><em>A child's day: each activity is a pictogram card they can check off.</em></figcaption>
+</figure>
+
+<figure>
   <img src="{{ '/assets/screenshots/weekplanner/03-weekplan.png' | relative_url }}" alt="A day plan of pictogram activity cards with times, the first two completed">
-  <figcaption><em>A child's day: pictogram activity cards with times, the first two ticked off as done.</em></figcaption>
+  <figcaption><em>The day view with times, the first two activities ticked off.</em></figcaption>
 </figure>
 
 <figure>
@@ -29,7 +33,7 @@ citizens and pictograms shared through the central **giraf-core** service. Origi
 
 <figure>
   <img src="{{ '/assets/screenshots/weekplanner/05-add-activity.jpg' | relative_url }}" alt="Add-activity form with pictogram search, upload and AI generation">
-  <figcaption><em>Adding an activity: search the pictogram library, upload an image, or generate one with AI.</em></figcaption>
+  <figcaption><em>Adding an activity: search the pictogram library, upload an image, or generate one with AI. The spoken title can be generated too.</em></figcaption>
 </figure>
 
 <figure>

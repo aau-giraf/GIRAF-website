@@ -4,54 +4,30 @@ title: For Students
 permalink: /students/
 ---
 
-## Join the GIRAF Project
+## Join the GIRAF project
 
-GIRAF is a fall-semester project for students at Aalborg University. Each fall semester, student teams contribute new features, improvements, and research to our applications.
+5th semester students from Interaction Design, Software Development and Information Technology work on GIRAF every fall.
 
-## Getting Started
+## What you work on
 
-Ready to contribute? Head to our developer wiki:
+Depending on your education you might:
 
-**[GIRAF Wiki – Onboarding](https://aau-giraf.github.io/wiki/Onboarding/)**
+- Build features in Weekplanner, VTA or Foodplanner
+- Test the apps with children and staff at Egebakken Specialskole and act on what you find
+- Move an app onto the shared giraf-core service
+- Fix bugs and improve code quality
 
-The wiki contains:
-- Development environment setup guides
-- Project architecture documentation
-- Contribution guidelines
-- Git workflow and branching strategy
-- Technical documentation for each application
+## Code
 
-## What You'll Work On
+All code is at [github.com/aau-giraf](https://github.com/aau-giraf). Each repository's README explains how to run it. Start with the [contributing guide](https://github.com/aau-giraf/.github/blob/main/CONTRIBUTING.md).
 
-Depending on your semester and study program, you might:
+- [weekplanner](https://github.com/aau-giraf/weekplanner): Weekplanner app and backend
+- [visual-tangible-artefacts](https://github.com/aau-giraf/visual-tangible-artefacts): VTA app, API and admin dashboard
+- [foodplanner](https://github.com/aau-giraf/foodplanner) and [foodplanner-api](https://github.com/aau-giraf/foodplanner-api): Foodplanner app and backend
+- [giraf-core](https://github.com/aau-giraf/giraf-core): shared service for users, organisations, citizens and pictograms
+- [giraf-ai](https://github.com/aau-giraf/giraf-ai): pictogram generation and text-to-speech
+- [giraf-deploy](https://github.com/aau-giraf/giraf-deploy): Docker Compose for the full stack
 
-- **Develop new features** for Weekplanner, VTA or Foodplanner
-- **Improve user experience** based on feedback from partner institutions
-- **Research user needs** through collaboration with Egebakken Specialskole
-- **Write documentation** and improve onboarding for future students
-- **Fix bugs** and improve code quality
+## Questions
 
-## Programs Involved
-
-GIRAF involves students from multiple programs:
-- Software Engineering (5th semester)
-- Information Technology
-- Interaction Design
-
-This interdisciplinary collaboration mirrors real-world software development.
-
-## GitHub Organization
-
-All code lives at [github.com/aau-giraf](https://github.com/aau-giraf).
-
-Key repositories:
-- [weekplanner](https://github.com/aau-giraf/weekplanner) - Weekplanner app and backend
-- [visual-tangible-artefacts](https://github.com/aau-giraf/visual-tangible-artefacts) - VTA app and API
-- [foodplanner](https://github.com/aau-giraf/foodplanner) - Foodplanner app
-- [foodplanner-api](https://github.com/aau-giraf/foodplanner-api) - Foodplanner backend
-- [giraf-core](https://github.com/aau-giraf/giraf-core) - Shared backend service
-- [wiki](https://github.com/aau-giraf/wiki) - Documentation
-
-## Questions?
-
-Check the [wiki](https://aau-giraf.github.io/wiki/) first, or contact the project supervisor, Nicolai Brodersen Hansen ([nbha@cs.aau.dk](mailto:nbha@cs.aau.dk)).
+Contact the project supervisor, Nicolai Brodersen Hansen ([nbha@cs.aau.dk](mailto:nbha@cs.aau.dk)).

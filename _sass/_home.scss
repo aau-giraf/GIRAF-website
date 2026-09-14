@@ -58,6 +58,42 @@
   em { font-style: italic; }
 }
 
+.intro-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: $s-6;
+  align-items: center;
+}
+
+.intro-shot {
+  margin: 0;
+
+  img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+    border: 1px solid $line;
+    border-radius: $r-lg;
+    box-shadow: 0 12px 32px rgba(31, 27, 22, 0.12);
+  }
+
+  figcaption {
+    font-size: 0.85rem;
+    color: $ink-soft;
+    margin-top: $s-2;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .intro-grid {
+    grid-template-columns: 1fr;
+    gap: $s-4;
+  }
+}
+
 /* --- app board ----------------------------------------------- */
 .app-board {
   display: grid;

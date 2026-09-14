@@ -21,7 +21,7 @@ bundle install
 - **Pages** — markdown files at the repo root, each with its own `permalink`.
 - **App pages** — `apps/` (`apps.md` indexes them).
 - **Blog posts** — `_posts/YYYY-MM-DD-title.md` (or `./site.sh post "Title"`); the homepage lists the
-  5 most recent.
+  4 most recent.
 - **Navigation** — `_data/settings.yml` (`menu:`).
 
 ## Deploy
